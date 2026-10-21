@@ -29,3 +29,10 @@ Used the original ZIP unchanged with SHA-256 pinning, code-kit entry, GameHost l
 The snapshot's translation validator rejects spaces inside keys (`category.Sports Cars`), so display-label translation keys use `SportsCars` while database category values stay unchanged. The manifest uses `sound.why` as defined by the validator. The platform's generic release workflow cannot validate genuine car-photo gameplay until the content set exists. A finite catalogue ends marathon/time attack explicitly rather than violating the user's no-repeats rule.
 
 Block requests: none. Main documentation gap for this project: migration of snapshot portal focus lifecycle to the latest CrazyGames game-event guidance must be checked before channel activation.
+
+
+## Starter artwork update — 2026-10-21
+
+Added four owner-requested AI-generated transparent PNGs and explicit model metadata. All four modes support marathon/time attack with this pack. Quick Play uses marathon below 10 cars; classic still requires 10 unique cars. README and asset provenance document include these limits.
+
+Validation: 26 unit tests pass, catalogue validation and production build pass. Independent reviewer checked aliases, all eight available mode/format combinations, unique questions, classic minimum and PNG model correspondence/framing. Minor generated alpha-edge flecks remain, especially on the white Silvia. Browser/end-to-end visual QA remains unverified; previous browser permission denial was respected. No claim of CrazyGames submission readiness.

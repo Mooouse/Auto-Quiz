@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "id": "nissan-skyline-r34-gtr",
+    "brand": "Nissan",
+    "model": "Skyline GT-R",
+    "generation": "R34",
+    "modification": "",
+    "fullName": "Nissan Skyline GT-R R34",
+    "aliases": [
+      "Nissan Skyline R34 GT-R",
+      "Nissan Skyline GTR R34"
+    ],
+    "image": "cars/nissan-skyline-r34.png",
+    "categories": [
+      "JDM",
+      "Japanese",
+      "Sports Cars"
+    ],
+    "difficulty": 2,
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+  },
+  {
+    "id": "toyota-supra-a80",
+    "brand": "Toyota",
+    "model": "Supra",
+    "generation": "A80",
+    "modification": "",
+    "fullName": "Toyota Supra A80",
+    "aliases": [
+      "Toyota Supra MK4",
+      "Toyota Supra MK IV",
+      "Toyota Supra JZA80"
+    ],
+    "image": "cars/toyota-supra-a80.png",
+    "categories": [
+      "JDM",
+      "Japanese",
+      "Sports Cars"
+    ],
+    "difficulty": 2,
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+  },
+  {
+    "id": "mazda-rx7-fd",
+    "brand": "Mazda",
+    "model": "RX-7",
+    "generation": "FD",
+    "modification": "",
+    "fullName": "Mazda RX-7 FD",
+    "aliases": [
+      "Mazda RX7 FD",
+      "Mazda RX-7 FD3S"
+    ],
+    "image": "cars/mazda-rx7-fd.png",
+    "categories": [
+      "JDM",
+      "Japanese",
+      "Sports Cars"
+    ],
+    "difficulty": 2,
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+  },
+  {
+    "id": "nissan-silvia-s15",
+    "brand": "Nissan",
+    "model": "Silvia",
+    "generation": "S15",
+    "modification": "",
+    "fullName": "Nissan Silvia S15",
+    "aliases": [
+      "Nissan S15 Silvia"
+    ],
+    "image": "cars/nissan-silvia-s15.png",
+    "categories": [
+      "JDM",
+      "Japanese",
+      "Sports Cars"
+    ],
+    "difficulty": 2,
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+  }
+]

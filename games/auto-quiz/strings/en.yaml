@@ -50,6 +50,7 @@
   "available": "Available: {n}",
   "needCars": "At least {required} required. This selection has {available}.",
   "start": "Start game",
+  "quickPlaySmall": "Quick start · marathon, 3 mistakes",
   "quickPlay": "Quick start · 10 questions",
   "noCars": "Every collection starts with one car",
   "noCarsDesc": "No photographs have been added yet. Import a JSON catalogue and its matching PNG files to unlock all game modes.",
