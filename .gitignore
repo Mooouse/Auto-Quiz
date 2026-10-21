@@ -1,0 +1,6 @@
+node_modules/
+.platform/
+dist/
+qa/
+*.log
+.DS_Store

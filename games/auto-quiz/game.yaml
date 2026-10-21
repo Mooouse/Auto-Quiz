@@ -1,0 +1,21 @@
+spec: 0
+id: auto-quiz
+title: AUTO QUIZ
+audience: general
+channel: web
+kit: code
+entry: main.ts
+background: "#0b0d14"
+saveKey: autoquiz.platform.v1
+languages: [en, ru]
+version: { name: 0.1.0, code: 1 }
+concept:
+  pitch: "Recognize precisely identified cars from owner-supplied transparent photographs and silhouettes."
+  closest: ["Guess Their Answer", "Whooo?", "ToT or Trivia"]
+  different: "The same explicitly identified car can be challenged in four combinations of full-color or silhouette and multiple-choice or strict typed recognition."
+  progression: "Correct recognition opens a personal photographic collection. XP and single-player titles track mastery."
+  twist: { event: silhouette-reveal, within: 30, explained: "Recognize the silhouette. Reveal the car." }
+listing:
+  description: "AUTO QUIZ is a car recognition game with four single-player modes. Identify cars from full-color photographs or silhouettes, choose an answer or type the exact model, and build your personal collection."
+  controls: "Mouse or touch: select an answer. Keyboard: 1–4 selects an option, Enter submits or continues, P pauses."
+sound: { music: false, why: "The requested first version uses optional non-intrusive sound effects only." }
