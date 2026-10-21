@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@gp/core": [
+        "./.platform/packages/core/src/index.ts"
+      ],
+      "@gp/core/*": [
+        "./.platform/packages/core/src/*"
+      ],
+      "@gp/art/*": [
+        "./.platform/packages/art/src/*"
+      ]
+    }
+  },
+  "include": [
+    "games/**/*.ts",
+    "src/**/*.ts",
+    "tests/*.ts",
+    "scripts/*.ts"
+  ]
+}
