@@ -1,0 +1,156 @@
+
+/* AUTO QUIZ / RACE PADDOCK — visual redesign, additive to existing UI.
+   No external images or dependencies; home uses the catalog car PNG. */
+:root { --race-red:#e80016; --race-ink:#101115; --race-acid:#e6ff00; }
+.app-shell:not(.is-racing-home) .button.primary {background:linear-gradient(112deg,#e60016,#b30019);border-color:#ff3850;box-shadow:0 8px 25px #e5001733}
+.app-shell:not(.is-racing-home) .button.primary:hover {background:#fc2338}
+.app-shell:not(.is-racing-home) .nav-item.active {background:linear-gradient(90deg,#5c1724,#25161c);color:#fff}
+.app-shell:not(.is-racing-home) .nav-item.active i {background:#f9213e;box-shadow:0 0 10px #f9213e}
+.app-shell:not(.is-racing-home) .logo-mark,.app-shell:not(.is-racing-home) .wordmark>span {color:#fd3449}
+.app-shell:not(.is-racing-home) .mode-card.selected {border-color:#f33b4a}
+.app-shell:not(.is-racing-home) .thin-progress i,
+.app-shell:not(.is-racing-home) .progress-bar i {background:linear-gradient(90deg,#f12840,#f59b4f)}
+.is-racing-home {display:block;min-height:100dvh;background:#f1f1f1;color:#121216;font-family:'Exo 2',ui-sans-serif,system-ui,sans-serif;overflow:hidden}
+.is-racing-home .sidebar,.is-racing-home .mobile-nav,.is-racing-home .app-footer{display:none!important}
+.is-racing-home .app-body {width:100%;margin-left:0;min-height:100dvh;background:#f1f1f1;position:relative;display:block}
+.is-racing-home .main {width:100%;max-width:none;padding:0;margin:0;display:block}
+.is-racing-home .topbar {position:absolute;right:0;top:0;left:0;z-index:7;border:none;background:none;display:flex;justify-content:flex-end;height:102px;padding:20px 2.6vw;pointer-events:none}
+.is-racing-home .topbar .breadcrumb,.is-racing-home .topbar .mobile-brand,.is-racing-home .topbar .streak-badge{display:none}
+.is-racing-home .topbar .top-profile{pointer-events:auto;display:flex;gap:13px;align-items:center;background:rgba(252,252,252,.88);padding:7px 9px 7px 15px;border:1px solid #c8c8c8;clip-path:polygon(0 0,100% 0,100% 100%,0 100%);}
+.is-racing-home .topbar .header-xp{width:180px;font-weight:900;color:#171717;text-transform:uppercase;font-size:13px}
+.is-racing-home .topbar .header-xp b{color:#191919;font-size:10px;white-space:nowrap}
+.is-racing-home .topbar .thin-progress{height:6px;border:1px solid #131313;background:#e1e1e1;margin-top:7px;border-radius:0;transform:skew(-14deg)}
+.is-racing-home .topbar .thin-progress i{border-radius:0;background:var(--race-red)}
+.is-racing-home .topbar .avatar{height:50px;width:50px;border-radius:0;clip-path:polygon(12% 0,100% 0,100% 82%,82% 100%,0 100%,0 18%);background:#171717;border:0;color:#fff;font-size:17px;font-weight:900}
+.is-racing-home #save-warning{position:relative;z-index:8}
+.race-home{width:100%;min-height:100dvh;background:#f3f3f3;position:relative}
+.race-stage{height:clamp(465px,77dvh,810px);position:relative;isolation:isolate;overflow:hidden;background:
+ linear-gradient(180deg,rgba(255,255,255,.92) 0%,rgba(236,238,239,.88) 42%,rgba(213,217,220,.6) 61%,rgba(132,140,150,.58) 72%,rgba(46,51,56,.96) 100%),
+ repeating-linear-gradient(110deg,#e6e9ec 0 2px,#f6f7f8 2px 33px,#d3d7da 34px 35px);
+}
+.race-stage:before{content:"";position:absolute;z-index:-1;inset:0;opacity:.44;background:
+ linear-gradient(132deg,transparent 0 67%,#8d9298 67.15% 67.25%,transparent 67.4%),
+ repeating-linear-gradient(95deg,transparent 0 19px,#5e6267 19px 20px,transparent 20px 120px);
+ mask-image:linear-gradient(transparent 0%,#000 40%,transparent 86%);pointer-events:none}
+.race-stage:after{content:"";position:absolute;z-index:1;inset:auto 0 0;height:21%;pointer-events:none;background:
+ repeating-linear-gradient(177deg,#1013161c 0 2px,transparent 2px 19px),
+ linear-gradient(1deg,#11182094,transparent 78%);
+ mix-blend-mode:multiply;}
+.race-grain{position:absolute;inset:0;pointer-events:none;z-index:2;opacity:.19;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.68' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.38'/%3E%3C/svg%3E")}
+.race-watermark{position:absolute;top:-6%;left:34%;line-height:1;z-index:0;font-size:clamp(250px,49vw,850px);font-style:italic;font-weight:1000;letter-spacing:-.11em;color:#89909624;user-select:none;white-space:nowrap;pointer-events:none}
+.race-branding{position:absolute;top:3.6%;left:3.5%;z-index:6;pointer-events:none;text-transform:uppercase;filter:drop-shadow(0 2px 0 #fff5)}
+.race-title{display:flex;flex-direction:column;font-weight:1000;font-style:italic;transform:skewX(-9deg);font-size:clamp(72px,9.4vw,165px);line-height:.71;letter-spacing:-.085em;color:#020203}
+.race-title span{display:block}
+.race-title strong{font-weight:1000;display:block;color:var(--race-red);padding-top:.16em;}
+.race-title .checker{display:inline-block;width:.68em;height:.53em;vertical-align:.02em;margin-left:.12em;background:conic-gradient(#101010 25%,transparent 0 50%,#101010 0 75%,transparent 0);background-size:50% 50%;transform:skew(9deg)}
+.race-branding:before{content:"";position:absolute;left:-3.2vw;top:0;height:34%;width:6px;background:var(--race-red);transform:skew(-21deg)}
+.race-side-note{position:absolute;top:31%;left:2.7%;z-index:3;font-size:clamp(11px,1.15vw,18px);line-height:1.13;color:#878a8c;font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.03em}
+.race-side-note span{display:block}
+.race-pit{position:absolute;top:9%;right:-1%;width:28%;height:61%;z-index:0;opacity:.75;clip-path:polygon(36% 0,100% 0,100% 100%,0 100%,0 48%);background:
+ repeating-linear-gradient(90deg,transparent 0 17%,#626b72 17.2% 18%,transparent 18.3% 20%),
+ repeating-linear-gradient(0deg,#77818c22 0 27%,#151a2270 27.5% 30%,#dae0e240 31% 49%),
+ linear-gradient(100deg,#b4b8ba,#505962)}
+.race-pit:before{content:"";position:absolute;inset:14% 0 auto;height:19%;background:repeating-linear-gradient(90deg,#23272d 0 9%,#e40724 9% 11%,#e9e9e9 11% 20%);transform:skewY(-10deg)}
+.race-pit:after{content:"";position:absolute;inset:auto 3% 3% 0;height:4px;background:#1c2025;box-shadow:0 -48px 0 #50575d,0 -110px 0 #3c434a}
+.race-gantry{position:absolute;top:34%;right:8%;z-index:0;opacity:.74;transform:skew(-8deg);border:5px solid #50565d;border-bottom:0;background:repeating-linear-gradient(135deg,#41464b 0 2px,transparent 2px 22px);width:22%;height:19%;color:#fff}
+.race-gantry span{display:block;background:#272c33;padding:4px 5px;text-align:center;font-size:clamp(8px,1.2vw,21px);font-weight:1000;font-style:italic;letter-spacing:.07em}
+.race-lane{position:absolute;bottom:18%;left:0;right:0;height:14px;z-index:1;background:linear-gradient(90deg,#eb001a,#ef2532 35%,#fefefe 35% 38%,#d8071e 38% 57%,#fff 57% 60%,#e20018 60%);transform:skewY(-1deg);box-shadow:0 8px 0 #f8f8f8,0 11px 0 #191c20;}
+.race-ground{position:absolute;z-index:1;bottom:0;left:-10%;right:-10%;height:21%;opacity:.78;background:
+ repeating-linear-gradient(176deg,transparent 0 16px,#fff5 17px 21px,transparent 22px 35px),
+ repeating-linear-gradient(0deg,#10131810 0 5px,transparent 5px 30px);
+ transform:perspective(900px) rotateX(21deg)}
+.race-vehicle{position:absolute;z-index:4;inset:25% 4% 10%;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.race-vehicle img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 16px 7px #1118) drop-shadow(0 32px 20px #0d13176b);animation:race-enter .65s cubic-bezier(.18,.8,.4,1) both}
+.race-vehicle .ghost-car{position:relative;top:auto;left:auto;width:100%;height:80%;filter:contrast(1.3)}
+.race-car-caption{position:absolute;z-index:5;bottom:19%;right:3%;font-size:clamp(8px,1vw,12px);font-weight:900;letter-spacing:.1em;color:#f7f7f7;text-shadow:0 2px 4px #222}
+.race-car-caption strong{display:block;font-size:clamp(12px,1.4vw,23px);font-style:italic;color:#fff;letter-spacing:0}
+.race-track-mark{position:absolute;z-index:5;bottom:3%;left:2.5%;color:#fff9;font-size:10px;letter-spacing:.22em;font-weight:900}
+.race-controls{position:relative;z-index:8;min-height:190px;padding:0 2.2vw 14px;background:
+ repeating-linear-gradient(115deg,transparent 0 65px,#11111105 65px 69px,transparent 69px 90px),
+ #f4f4f4;border-top:5px solid #f3f3f3;box-shadow:0 -5px 20px #0002}
+.race-controls:before{content:"";position:absolute;top:-10px;left:2%;width:17%;height:5px;transform:skew(-21deg);background:var(--race-red)}
+.race-upper{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,1.5fr);gap:17px}
+.race-nav{display:flex;align-items:stretch;gap:9px;margin-top:11px;min-width:0}
+.race-nav button{display:flex;align-items:center;justify-content:center;gap:14px;flex:1 1 0;min-width:0;min-height:72px;background:linear-gradient(110deg,#fff,#e4e4e4);border:1px solid #929597;border-left:5px solid var(--race-red);color:#141414;font-size:clamp(11px,1.6vw,23px);font-weight:1000;transform:skew(-12deg);text-transform:uppercase;box-shadow:3px 4px 0 #282b30;}
+.race-nav button:hover{background:#fff;border-color:#d50019}
+.race-nav button .icon,.race-nav button span{transform:skew(12deg)}
+.race-nav button .icon{width:clamp(19px,2.5vw,35px);height:clamp(19px,2.5vw,35px)}
+.race-selector{display:flex;align-items:stretch;gap:6px;min-width:0;margin-top:13px}
+.race-mode{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:9px;min-height:58px;padding:5px 8px;background:#ececec;border:1px solid #b1b1b1;transform:skew(-13deg);font-size:clamp(9px,1.15vw,17px);font-weight:900;color:#202020;text-transform:uppercase}
+.race-mode>*{transform:skew(13deg)}
+.race-mode .icon{height:23px;width:23px}
+.race-mode.active{background:#101010;color:#fff;border-color:var(--race-acid);box-shadow:0 0 0 2px var(--race-acid) inset}
+.race-mode:hover:not(.active){background:#fff}
+.race-lower{display:flex;align-items:stretch;gap:16px;margin-top:11px}
+.race-decor{font-size:32px;color:#131313;font-weight:900;align-self:center}
+.race-format{min-width:155px;min-height:59px;align-self:center;display:flex;align-items:center;justify-content:center;gap:9px;transform:skew(-13deg);background:#090909;color:#fff;border:2px solid var(--race-acid);box-shadow:3px 3px 0 #505050;font-weight:900;font-size:13px;text-transform:uppercase}
+.race-format>*{transform:skew(13deg)}
+.race-format:hover{background:#2c2c2c}
+.race-launch{grid-row:span 2;position:relative;min-height:142px;display:flex;align-items:center;justify-content:space-around;padding:18px 32px 18px 28px;background:var(--race-red);color:#fff;font-size:clamp(33px,5vw,81px);font-weight:1000;font-style:italic;letter-spacing:-.06em;text-transform:uppercase;clip-path:polygon(10% 0,100% 0,100% 88%,95% 100%,0 100%);text-shadow:0 2px 0 #c40016;transition:background .2s,filter .2s}
+.race-launch:before{content:"";position:absolute;left:10%;top:26%;width:6%;height:50%;border-left:6px solid #830008;border-right:6px solid #830008;transform:skew(-22deg);opacity:.9}
+.race-launch:hover:not(:disabled){background:#fb0a24;filter:brightness(1.04)}
+.race-launch:active:not(:disabled){filter:brightness(.9)}
+.race-launch:disabled{opacity:.55;cursor:not-allowed}
+.race-launch .icon{height:clamp(34px,4vw,66px);width:clamp(34px,4vw,66px);stroke-width:3}
+.race-hint{display:block;font-size:11px;min-height:16px;color:#696969;margin:9px 0 0 7px;font-weight:700}
+@keyframes race-enter{from{opacity:0;transform:translateX(-28px) scale(.98)}to{opacity:1;transform:translateX(0) scale(1)}}
+@media(max-width:1100px) {
+ .race-stage{height:clamp(480px,68dvh,720px)}
+ .race-title{font-size:clamp(73px,10vw,120px)}
+ .race-nav button{gap:7px;font-size:clamp(10px,1.6vw,16px)}
+ .race-nav button .icon{width:22px;height:22px}
+ .race-launch{padding:14px 22px;font-size:clamp(32px,5.5vw,56px)}
+ .race-selector{gap:5px}
+ .race-mode{gap:5px;font-size:clamp(9px,1.2vw,13px)}
+}
+@media(max-width:760px){
+ .is-racing-home .topbar{height:70px;padding:10px 12px}
+ .is-racing-home .topbar .top-profile{padding:4px 4px 4px 9px;gap:6px}
+ .is-racing-home .topbar .header-xp{width:99px;font-size:9px}
+ .is-racing-home .topbar .header-xp>span{display:flex;flex-direction:column;gap:1px}
+ .is-racing-home .topbar .header-xp b{font-size:8px}
+ .is-racing-home .topbar .avatar{width:36px;height:36px;font-size:10px}
+ .race-stage{height:clamp(390px,63dvh,600px)}
+ .race-branding{top:5%;left:5%}
+ .race-title{font-size:clamp(65px,13vw,112px)}
+ .race-side-note{top:37%;left:5%;font-size:11px}
+ .race-watermark{top:17%;left:28%;font-size:66vw}
+ .race-vehicle{inset:30% 0 12%}
+ .race-car-caption{bottom:18%;right:4%}
+ .race-controls{padding:8px 14px 22px}
+ .race-upper{display:flex;flex-direction:column;gap:8px}
+ .race-nav{margin-top:0}
+ .race-nav button{min-height:55px;font-size:clamp(11px,2.5vw,17px)}
+ .race-lower{margin-top:8px}
+ .race-selector{margin-top:0;flex:1}
+ .race-mode{min-height:47px}
+ .race-launch{min-height:78px;clip-path:polygon(5% 0,100% 0,100% 90%,96% 100%,0 100%);font-size:32px}
+ .race-hint{font-size:10px}
+}
+@media(max-width:540px){
+ .race-stage{height:clamp(365px,54dvh,490px)}
+ .race-title{font-size:clamp(58px,14vw,80px)}
+ .race-branding{top:6%}
+ .race-side-note{top:37%;font-size:10px}
+ .race-pit{width:40%;top:15%;opacity:.5}
+ .race-gantry{display:none}
+ .race-vehicle{inset:32% 0 9%}
+ .race-car-caption{bottom:17%;font-size:8px}
+ .race-car-caption strong{font-size:11px}
+ .race-track-mark{font-size:7px}
+ .race-controls{padding:8px 13px 24px}
+ .race-upper{gap:8px}
+ .race-nav{gap:5px}
+ .race-nav button{min-height:56px;gap:5px;font-size:10px;border-left-width:3px;box-shadow:2px 3px 0 #333}
+ .race-nav button .icon{width:20px;height:20px}
+ .race-nav button span{white-space:nowrap}
+ .race-lower{display:flex;flex-direction:column;gap:10px}
+ .race-selector{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;width:100%}
+ .race-mode{flex-direction:column;gap:2px;min-height:60px;font-size:9px;padding:4px 2px}
+ .race-mode .icon{width:18px;height:18px}
+ .race-decor{display:none}
+ .race-format{min-width:100%;min-height:46px;margin:0}
+ .race-launch{min-height:85px;width:100%;font-size:42px}
+}
+@media(prefers-reduced-motion:reduce){.race-vehicle img{animation:none!important}.race-launch{transition:none!important}}
+.reduced-motion .race-vehicle img{animation:none!important}
