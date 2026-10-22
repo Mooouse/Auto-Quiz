@@ -55,9 +55,48 @@ export class AutoQuizApp{
  }
  private content():string{switch(this.screen){case'home':return this.home();case'modes':return this.modes();case'collection':return this.collection();case'profile':return this.profileScreen();case'stats':return this.stats();case'settings':return this.settings();case'data':return this.data();case'achievements':return this.achievements();case'game':return this.game();case'results':return this.results();}}
  private quickFormat():Format{return this.catalog.cars.length>0&&this.catalog.cars.length<10?'marathon':'classic';}
+
  private home(){
-  const car=this.catalog.cars[this.heroIndex%Math.max(1,this.catalog.cars.length)];const unlocked=this.catalog.cars.filter(c=>this.profile.cars[c.id]?.correct).length;
-  return `<section class="home-hero"><div class="hero-copy"><p class="eyebrow"><span class="line"></span> ${this.text('brandline')}</p><h1>${this.text('hero1')}<br><em>${this.text('hero2')}</em></h1><p class="hero-description">${this.text('heroCopy')}</p><div class="hero-actions">${this.btn(`${this.text('play')} ${icon('arrow')}`,'quick','primary','data-gp="play"')}${this.btn(icon('grid'),'modes','square',`aria-label="${this.text('modes')}"`)}</div><span class="microcopy">${this.text(this.quickFormat()==='classic'?'quickPlay':'quickPlaySmall')}</span><div class="hero-stats"><div><strong>${this.num(unlocked)}<small> / ${this.num(this.catalog.cars.length)}</small></strong><span>${this.text('collection')}</span></div><div><strong>${pct(this.profile.correct,this.profile.answered)}<small>%</small></strong><span>${this.text('accuracy')}</span></div><div><strong>${this.profile.bestStreak}</strong><span>${this.text('bestStreak')}</span></div></div></div><div class="showroom"><div class="stage-top"><span>${this.text('showroom')}</span><span>${String(this.heroIndex+1).padStart(2,'0')} <i>/</i> ${String(Math.max(1,this.catalog.cars.length)).padStart(2,'0')}</span></div><div class="stage-glow"></div><div class="stage-grid"></div><div class="stage-orbit"></div>${car?`<img class="hero-car" src="${esc(this.catalog.url(car))}" alt="${esc(car.fullName)}"><div class="stage-caption"><span>${this.text('discover')}</span><h2>${esc(car.fullName)}</h2><p>${esc(car.brand)} <i>·</i> ${esc(car.categories.map(x=>this.category(x)).slice(0,2).join(' / '))}</p></div>`:`${ghostCar()}<div class="stage-caption empty-caption"><span>${this.text('discover')}</span><h2>${this.text('emptyStage')}</h2><p>${this.text('emptyStageSub')}</p><button class="text-button" data-action="data">${this.text('loadCars')}${icon('arrow')}</button></div>`}<span class="stage-coordinate">AQ — 01 <span>EST. 2026</span></span></div></section><section class="mode-section"><div class="section-heading"><h2>${this.text('selectMode')}</h2><button class="text-button" data-action="modes">${this.text('allModes')}${icon('arrow')}</button></div><div class="mode-grid">${MODES.map((m,i)=>this.modeCard(m,i,false)).join('')}</div></section>`;
+  // Put the Skyline first in the showroom, rotate through remaining cars.
+  const featured=[...this.catalog.cars].sort((a,b)=>Number(b.id==='nissan-skyline-r34-gtr')-Number(a.id==='nissan-skyline-r34-gtr'));
+  const car=featured[this.heroIndex%Math.max(1,featured.length)];
+  const req=sessionRequirement(this.catalog.cars,this.config);
+  const format=this.text('format.'+this.config.format);
+  const modeButtons=MODES.map(m=>`<button class="race-mode ${this.config.mode===m?'active':''}" data-action="home-mode" data-mode="${m}" aria-pressed="${this.config.mode===m}">${icon(modeIcons[m])}<span>${this.text('mode.'+m)}</span></button>`).join('');
+  return `<div class="race-home">
+    <section class="race-stage" aria-label="AUTO QUIZ">
+      <div class="race-grain" aria-hidden="true"></div>
+      <div class="race-watermark" aria-hidden="true">01</div>
+      <div class="race-branding"><div class="race-title"><span>AUTO</span><strong>QUIZ<i class="checker" aria-hidden="true"></i></strong></div></div>
+      <div class="race-side-note" aria-hidden="true"><span>CARS</span><span>BRANDS</span><span>LEGENDS</span><span>QUIZ</span></div>
+      <div class="race-pit" aria-hidden="true"></div>
+      <div class="race-gantry" aria-hidden="true"><span>AUTO QUIZ</span></div>
+      <div class="race-lane" aria-hidden="true"></div>
+      <div class="race-ground" aria-hidden="true"></div>
+      <div class="race-vehicle">${car?`<img src="${esc(this.catalog.url(car))}" alt="${esc(car.fullName)}" draggable="false">`:ghostCar()}</div>
+      <div class="race-car-caption"><span>${this.text('showroom')} / ${String(this.heroIndex%Math.max(1,featured.length)+1).padStart(2,'0')}</span><strong>${car?esc(car.fullName):this.text('emptyStage')}</strong></div>
+      <div class="race-track-mark" aria-hidden="true">AUTO QUIZ / SOLO / 2026</div>
+    </section>
+    <section class="race-controls" aria-label="${this.text('selectMode')}">
+      <div class="race-upper">
+        <div class="race-control-left">
+          <nav class="race-nav" aria-label="${this.text('modes')}">
+            <button data-action="modes">${icon('grid')}<span>${this.text('modes')}</span></button>
+            <button data-action="collection">${icon('car')}<span>${this.text('collection')}</span></button>
+            <button data-action="profile">${icon('user')}<span>${this.text('profile')}</span></button>
+          </nav>
+          <div class="race-lower">
+            <div class="race-selector" role="group" aria-label="${this.text('selectMode')}">${modeButtons}</div>
+            <button class="race-format" data-action="home-format" aria-label="${this.text('format')}: ${format}">${icon('flag')}<span>${format}</span></button>
+          </div>
+        </div>
+        <button class="race-launch" data-action="home-start" data-gp="play" ${req.ok?'':'disabled'} aria-label="${this.text('play')}">
+          <span>${this.text('play')}</span>${icon('arrow')}
+        </button>
+      </div>
+      <div class="race-hint">${req.ok?`${this.text('mode.'+this.config.mode)} · ${format} · ${this.num(req.available)} ${this.text('allCars')}`:this.text('needCars',{required:req.required,available:req.available})}</div>
+    </section>
+  </div>`;
  }
  private modeCard(m:Mode,i:number,select:boolean){return `<button class="mode-card mode-${m} ${select&&this.config.mode===m?'selected':''}" data-action="mode" data-mode="${m}" ${select?`aria-pressed="${this.config.mode===m}"`:''}><div class="mode-card-top"><span class="mode-icon">${icon(modeIcons[m])}</span><span class="mode-number">0${i+1}</span></div><span class="difficulty">${this.text(`difficulty.${m}`)}</span><h3>${this.text(`mode.${m}`)}</h3><p>${this.text(`desc.${m}`)}</p><div class="mode-card-bottom"><b>${BASE_POINTS[m]} <span>${this.text('pointsShort')}</span></b>${icon(select&&this.config.mode===m?'check':'arrow')}</div></button>`;}
  private modes(){const req=sessionRequirement(this.catalog.cars,this.config);const f=catalogFacets(this.catalog.cars);return `${this.heading('selectMode','modeIntro')}<div class="setup-layout"><section class="setup-modes">${MODES.map((m,i)=>this.modeCard(m,i,true)).join('')}</section><aside class="setup-panel panel"><div class="panel-heading"><span class="eyebrow">${this.text('sessionLabel')} / 01</span><h2>${this.text('configure')}</h2></div><div class="field-label">${this.text('format')}</div><div class="format-options">${FORMATS.map(format=>`<button data-action="format" data-format="${format}" class="format-option ${this.config.format===format?'selected':''}" aria-pressed="${this.config.format===format}">${icon(format==='timed'?'clock':format==='marathon'?'heart':'flag')}<span><b>${this.text(`format.${format}`)}</b><small>${this.text(`formatDesc.${format}`)}</small></span><i></i></button>`).join('')}</div><div class="filter-pair">${this.select('category',this.t('category'),[['',this.t('allCars')],...f.categories.map(c=>[c,this.category(c)])],this.config.category)}${this.select('brand',this.t('brand'),[['',this.t('allBrands')],...f.brands.map(c=>[c,c])],this.config.brand)}</div><div class="availability ${req.ok?'ok':''}">${icon(req.ok?'check':'info')}<span>${req.ok?this.text('available',{n:req.available}):this.text('needCars',{required:req.required,available:req.available})}</span></div>${this.btn(`${this.text('start')} ${icon('arrow')}`,'start','primary wide',`${!req.ok?'disabled':''} data-gp="play"`)}${!this.catalog.cars.length?`<button class="text-button centered" data-action="data">${this.text('loadCars')}${icon('upload')}</button>`:''}</aside></div>`;}
@@ -92,6 +131,9 @@ export class AutoQuizApp{
   if(action==='nav'){await this.navigate(el.dataset.screen as Screen);return;}
   if(['home','modes','collection','profile','stats','settings','data','achievements'].includes(action)){await this.navigate(action as Screen);return;}
   switch(action){
+   case'home-mode':this.config.mode=el.dataset.mode as Mode;this.render();break;
+   case'home-format':this.config.format=FORMATS[(FORMATS.indexOf(this.config.format)+1)%FORMATS.length];this.render();break;
+   case'home-start':await this.startGame();break;
    case'quick':this.config={mode:'photo',format:this.quickFormat(),category:'',brand:''};await this.startGame();break;
    case'mode':this.config.mode=el.dataset.mode as Mode;this.screen='modes';this.render();break;
    case'format':this.config.format=el.dataset.format as Format;this.render();break;
