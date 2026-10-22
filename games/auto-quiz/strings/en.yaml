@@ -263,5 +263,6 @@
   "shortMode.photo": "Photo",
   "shortMode.expert": "Expert",
   "shortMode.silhouette": "Silhouette",
-  "shortMode.master": "Master"
+  "shortMode.master": "Master",
+  "navigation": "Navigation"
 }

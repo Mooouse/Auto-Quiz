@@ -263,5 +263,6 @@
   "shortMode.photo": "Фото",
   "shortMode.expert": "Эксперт",
   "shortMode.silhouette": "Силуэт",
-  "shortMode.master": "Мастер"
+  "shortMode.master": "Мастер",
+  "navigation": "Навигация"
 }
