@@ -259,5 +259,9 @@
   "sessionComplete": "СЕССИЯ ЗАВЕРШЕНА",
   "pointsShort": "ОЧК.",
   "chooseAnswer": "Выберите один из четырёх ответов",
-  "keysTyped": "Enter — ответ / далее · P — пауза вне поля ввода"
+  "keysTyped": "Enter — ответ / далее · P — пауза вне поля ввода",
+  "shortMode.photo": "Фото",
+  "shortMode.expert": "Эксперт",
+  "shortMode.silhouette": "Силуэт",
+  "shortMode.master": "Мастер"
 }

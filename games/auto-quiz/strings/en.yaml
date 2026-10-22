@@ -259,5 +259,9 @@
   "sessionComplete": "SESSION COMPLETE",
   "pointsShort": "PTS",
   "chooseAnswer": "Choose one of four answers",
-  "keysTyped": "Enter submit / next · P pause outside the input"
+  "keysTyped": "Enter submit / next · P pause outside the input",
+  "shortMode.photo": "Photo",
+  "shortMode.expert": "Expert",
+  "shortMode.silhouette": "Silhouette",
+  "shortMode.master": "Master"
 }

@@ -36,3 +36,9 @@ Block requests: none. Main documentation gap for this project: migration of snap
 Added four owner-requested AI-generated transparent PNGs and explicit model metadata. All four modes support marathon/time attack with this pack. Quick Play uses marathon below 10 cars; classic still requires 10 unique cars. README and asset provenance document include these limits.
 
 Validation: 26 unit tests pass, catalogue validation and production build pass. Independent reviewer checked aliases, all eight available mode/format combinations, unique questions, classic minimum and PNG model correspondence/framing. Minor generated alpha-edge flecks remain, especially on the white Silvia. Browser/end-to-end visual QA remains unverified; previous browser permission denial was respected. No claim of CrazyGames submission readiness.
+
+
+## Racing menu continuation — 2026-10-22
+Preserved upstream racing home layout at 0b85cae. Filled tall viewports, removed inherited mobile bottom padding, added compact landscape layout, shortened RU/EN mode labels, preserved keyboard focus, prevented carousel rerender while controls have focus, and added crypto session ID fallback for HTTP QA. Corrected choice-mode instruction.
+Validation: 26 domain tests passed; TypeScript and Vite production build passed; real-catalog expert launch and separate 12-car fixture launch checked in browser. Home measured without vertical overflow at 2560×1440, 390×844, and 568×320. Independent code and screenshot reviews passed. Fixture files and QA captures excluded from production.
+Not verified: real devices, portal SDK integration, or portal submission readiness.

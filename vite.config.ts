@@ -7,7 +7,7 @@ export default defineConfig({
  base: './',
  plugins: [gpGame(locateGame(resolve('games/auto-quiz')), 'dev')],
  resolve: {alias: gpAliases()},
- server: {host:'127.0.0.1',port:5173,strictPort:true},
+ server: {allowedHosts:['terminal.local'],host:'127.0.0.1',port:5173,strictPort:true},
  preview: {host:'127.0.0.1',port:4173,strictPort:true},
  build: {outDir:'dist',target:'es2022',assetsInlineLimit:4096,sourcemap:false}
 });
