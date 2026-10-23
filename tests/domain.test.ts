@@ -85,3 +85,17 @@ test('same canonical identity or image cannot create two correct options',()=>{
  assert.ok(validateCatalog([cars[0],duplicate]).issues.some(i=>i.code==='duplicate-model'));
  assert.ok(validateCatalog([cars[0],{...cars[1],image:cars[0].image}]).issues.some(i=>i.code==='duplicate-image'));
 });
+
+test('legacy profiles keep progress while requiring nickname onboarding and defaulting to light',()=>{
+ const p=hydrateProfile({version:1,nickname:'Existing Racer',xp:240,points:500,answered:5,correct:4,settings:{language:'ru',sound:false}},'en');
+ assert.equal(p.nickname,'Existing Racer');assert.equal(p.xp,240);assert.equal(p.points,500);
+ assert.equal(p.onboardingCompleted,false);assert.equal(p.settings.theme,'light');assert.equal(p.settings.sound,false);
+});
+test('theme and completed onboarding survive saving; malformed preferences cannot bypass registration',()=>{
+ const p=defaultProfile('ru');p.nickname='Гонщик';p.onboardingCompleted=true;p.settings.theme='dark';
+ const loaded=hydrateProfile(JSON.parse(JSON.stringify(p)),'en');
+ assert.equal(loaded.onboardingCompleted,true);assert.equal(loaded.nickname,'Гонщик');assert.equal(loaded.settings.theme,'dark');
+ for(const nickname of ['', '   ', 'x'.repeat(21), null])assert.equal(hydrateProfile({...p,nickname},'en').onboardingCompleted,false);
+ const invalid=hydrateProfile({...p,onboardingCompleted:'true',settings:{...p.settings,theme:'unknown'}},'en');
+ assert.equal(invalid.onboardingCompleted,false);assert.equal(invalid.settings.theme,'light');
+});

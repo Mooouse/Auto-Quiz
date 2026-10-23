@@ -27,9 +27,10 @@ export interface SessionController {
 }
 export interface CarStats { attempts: number; correct: number; unlockedAt?: number }
 export interface ModeStats { sessions: number; answered: number; correct: number; points: number; best: number; bestCorrect: number }
-export interface Settings { language: Language; sound: boolean; volume: number; reducedMotion: boolean; autoNext: boolean }
+export type Theme = 'light' | 'dark';
+export interface Settings { theme: Theme; language: Language; sound: boolean; volume: number; reducedMotion: boolean; autoNext: boolean }
 export interface Profile {
- version: 1; nickname: string; xp: number; points: number; sessions: number; answered: number; correct: number;
+ version: 1; onboardingCompleted: boolean; nickname: string; xp: number; points: number; sessions: number; answered: number; correct: number;
  streak: number; bestStreak: number; silhouetteCorrect: number; perfectSessions: number;
  cars: Record<string, CarStats>; achievements: Record<string, number>;
  modes: Record<string, ModeStats>; recent: string[]; settings: Settings; completedSessions: string[];

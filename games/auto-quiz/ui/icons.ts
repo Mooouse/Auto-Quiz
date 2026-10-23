@@ -10,6 +10,7 @@ const paths:Record<string,string>={
  car:'m3 14 2-5h13l3 5v5h-3v-2H6v2H3zM5 14h14M7 11h1M16 11h1',
  camera:'M3 7h4l2-3h6l2 3h4v13H3zM8 13a4 4 0 1 0 8 0 4 4 0 0 0-8 0',
  keyboard:'M2 5h20v14H2zM6 9h1M10 9h1M14 9h1M18 9h1M6 13h1M10 13h1M14 13h1M18 13h1M7 16h10',
+ sun:'M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1 1M18 18l1 1M5 19l1-1M18 6l1-1',
  moon:'M20 15a8 8 0 0 1-11-11A9 9 0 1 0 20 15',
  crown:'m3 7 5 4 4-7 4 7 5-4-2 13H5zM5 16h14',
  bolt:'m13 2-9 12h7l-1 8 10-13h-7z',

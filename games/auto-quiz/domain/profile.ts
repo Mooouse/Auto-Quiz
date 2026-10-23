@@ -1,12 +1,13 @@
 import {FORMATS,MODES,isSilhouette,type Profile,type Settings,type Car,type AnswerResult,type SessionSummary,type SessionConfig,type Language,type ModeStats} from './types.ts';
 export const statKey=(config:SessionConfig)=>`${config.mode}:${config.format}`;
 export const emptyMode=():ModeStats=>({sessions:0,answered:0,correct:0,points:0,best:0,bestCorrect:0});
-export function defaultProfile(language:Language='en'):Profile{return {version:1,nickname:'Driver',xp:0,points:0,sessions:0,answered:0,correct:0,streak:0,bestStreak:0,silhouetteCorrect:0,perfectSessions:0,cars:{},achievements:{},modes:Object.fromEntries(MODES.flatMap(m=>FORMATS.map(f=>[`${m}:${f}`,emptyMode()]))),recent:[],completedSessions:[],settings:{language,sound:true,volume:.4,reducedMotion:false,autoNext:false}};}
+export function defaultProfile(language:Language='en'):Profile{return {version:1,onboardingCompleted:false,nickname:'Driver',xp:0,points:0,sessions:0,answered:0,correct:0,streak:0,bestStreak:0,silhouetteCorrect:0,perfectSessions:0,cars:{},achievements:{},modes:Object.fromEntries(MODES.flatMap(m=>FORMATS.map(f=>[`${m}:${f}`,emptyMode()]))),recent:[],completedSessions:[],settings:{theme:'light',language,sound:true,volume:.4,reducedMotion:false,autoNext:false}};}
 const finite=(x:unknown,max=1e12)=>typeof x==='number'&&Number.isFinite(x)?Math.max(0,Math.min(max,Math.floor(x))):0;
 export function hydrateProfile(data:unknown,language:Language):Profile{
  const base=defaultProfile(language);if(!data||typeof data!=='object'||Array.isArray(data))return base;
  const d=data as Partial<Profile>;if(d.version!==1)return base;
  if(typeof d.nickname==='string')base.nickname=d.nickname.trim().slice(0,20)||'Driver';
+ base.onboardingCompleted=d.onboardingCompleted===true&&typeof d.nickname==='string'&&d.nickname.trim().length>0&&d.nickname.trim().length<=20;
  for(const k of ['xp','points','sessions','answered','correct','streak','bestStreak','silhouetteCorrect','perfectSessions'] as const)base[k]=finite(d[k]);
  base.correct=Math.min(base.correct,base.answered);
  if(d.cars&&typeof d.cars==='object')for(const [id,c] of Object.entries(d.cars)){
@@ -19,6 +20,7 @@ export function hydrateProfile(data:unknown,language:Language):Profile{
  if(Array.isArray(d.completedSessions))base.completedSessions=d.completedSessions.filter(x=>typeof x==='string').slice(-100);
  if(d.settings&&typeof d.settings==='object'){
   const s=d.settings;
+  if(s.theme==='light'||s.theme==='dark')base.settings.theme=s.theme;
   if(s.language==='ru'||s.language==='en')base.settings.language=s.language;
   for(const k of ['sound','reducedMotion','autoNext'] as const)if(typeof s[k]==='boolean')base.settings[k]=s[k];
   if(typeof s.volume==='number'&&Number.isFinite(s.volume))base.settings.volume=Math.max(0,Math.min(1,s.volume));

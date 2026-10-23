@@ -7,3 +7,4 @@ import './ui/racing.css';
 export default async function start(context:GameContext){useFont(EXO_2);const app=new AutoQuizApp(context);await app.start();}
 
 import './ui/circuit.css';
+import './ui/themes.css';
