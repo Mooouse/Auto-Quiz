@@ -5,64 +5,83 @@
 @media(max-width:650px){.circuit-header{gap:10px}.circuit-header>.theme-toggle{margin-left:auto}.circuit-driver{margin-left:0}.is-racing-home .topbar .theme-toggle{width:34px;height:34px}.is-racing-home .topbar .header-xp{width:80px}.is-racing-home .topbar .avatar{display:none}.circuit-shell .setup-modes .mode-card p{font-size:11px;line-height:1.45;margin-bottom:7px}.circuit-shell .format-option small{font-size:9px;line-height:1.35;margin-top:4px}.circuit-shell .format-option{min-height:87px}.welcome-shell{padding:16px}.welcome-header{margin-bottom:18px}.welcome-header .circuit-brand{font-size:25px}.welcome-tools{gap:10px}.welcome-tools .field>span{font-size:9px}.welcome-tools select{min-width:100px}.welcome-card{padding:23px 20px}.welcome-progress{margin-bottom:18px}.welcome-card h1{font-size:25px}.welcome-copy{font-size:12px;margin-bottom:17px}.welcome-emblem{width:46px;height:46px;margin-bottom:18px}.tutorial-modes{gap:9px}.tutorial-modes>div{padding:12px}.tutorial-modes p{font-size:11px}.welcome-actions .button{font-size:11px;padding:10px 14px}.welcome-footer{font-size:10px}.race-hint{font-size:10px}.tutorial-answers .button{font-size:10px}.welcome-note{font-size:11px}}
 @media(max-height:650px) and (orientation:landscape){.welcome-shell{padding:14px}.welcome-header{margin-bottom:14px}.welcome-card{padding:22px 28px}.welcome-card h1{font-size:26px}.welcome-emblem{display:none}.welcome-footer{margin-top:15px}.race-hint{font-size:9px}.race-controls{min-height:155px}.race-home{min-height:360px}}
 /* Dark palette keeps car artwork untouched and silhouettes legible. */
-:root[data-theme=dark]{color-scheme:dark;color:#eef1f6;background:#11151c;--bg:#11151c;--panel:#1b222c;--panel2:#252e3a;--muted:#a9b4c4;--line:#3a4656;--gold:#e5c56a;--green:#7cdbb0;--red:#ff8fa2}
-html[data-theme=dark] body,html[data-theme=dark] .boot{background:#11151c;color:#eef1f6}
-html[data-theme=dark] :is(.circuit-shell,.welcome-shell){background:repeating-linear-gradient(115deg,transparent 0 90px,#ffffff03 90px 92px),#131922;color:#eef1f6}
-html[data-theme=dark] :is(.circuit-header,.welcome-card){background:#1b222c;border-color:#3c4757;color:#eef1f6}
-html[data-theme=dark] .welcome-card{border-top-color:#ff3049;box-shadow:8px 8px 0 #070b1155}
-html[data-theme=dark] .circuit-brand{color:#f5f7fb}html[data-theme=dark] .circuit-brand i{background-image:conic-gradient(#f5f7fb 25%,transparent 0 50%,#f5f7fb 0 75%,transparent 0)}
-html[data-theme=dark] :is(.circuit-nav,.circuit-nav button,.theme-toggle){background:#283241;color:#e4eaf3;border-color:#465267}
-html[data-theme=dark] .circuit-nav button.active{background:#0c1017;border-bottom-color:#ff3049;color:#fff}
-html[data-theme=dark] :is(.circuit-driver,.game-hud b,.question-counter b,.reveal-name,.reveal-name h2,.stats-row strong,.collection-meta>b,.modal h2,.detail-meta b,.detail-stats b,.review-total b,.typed-feedback b){color:#eef1f6}
-html[data-theme=dark] :is(.panel,.mode-card,.car-card,.metric,.result-main,.result-review,.profile-banner,.achievement-card,.modal){background:#1b232f;border-color:#3b485b;color:#eef1f6;box-shadow:none}
-html[data-theme=dark] .circuit-shell :is(.panel,.mode-card){border-top-color:#6d7a8e}
-html[data-theme=dark] .mode-card.selected{background:#252f3e;border-color:#ff3049;box-shadow:inset 0 -4px #ff3049}
-html[data-theme=dark] .mode-card:hover{background:#263142}
-html[data-theme=dark] :is(.eyebrow,.subtext,.mode-card p,.mode-card-bottom b span,.mode-card-bottom>.icon,.field-label,.field,.collection-meta,.pagination,.car-card-info>div,.profile-level>div>span,.profile-level>small,.metric>span,.stats-row>span,.setting-row small,.settings-side p,.guide-step p,.code-note,.import-panel>p,.import-panel>small,.game-hud,.question-counter,.question-counter small,.reward-text,.typed-answer>span,.answer-footer,.answer-help>p,.result-score>span,.result-main>p,.result-main>p:not(.eyebrow),.result-metrics>div>span,.review-row small,.review-total,.modal>p,.detail-meta,.detail-stats,.detail-meta span,.detail-stats>span,.circuit-driver small,.circuit-shell .app-footer,.welcome-copy,.welcome-note,.welcome-footer,.tutorial-modes p,.practice-feedback,.achievement-card p,.empty-state p){color:#b1bdce}
+:root[data-theme=dark]{color-scheme:dark;color:#f1f1f1;background:#0e0e0e;--bg:#0e0e0e;--panel:#151515;--panel2:#1d1d1d;--muted:#b3b3b3;--line:#2d2d2d;--gold:#e5c56a;--green:#7cdbb0;--red:#ff8fa2}
+html[data-theme=dark] body,html[data-theme=dark] .boot{background:#0e0e0e;color:#f1f1f1}
+html[data-theme=dark] :is(.circuit-shell,.welcome-shell){background:repeating-linear-gradient(115deg,transparent 0 90px,#ffffff03 90px 92px),#101010;color:#f1f1f1}
+html[data-theme=dark] :is(.circuit-header,.welcome-card){background:#151515;border-color:#2e2e2e;color:#f1f1f1}
+html[data-theme=dark] .welcome-card{border-top-color:#ff3049;box-shadow:8px 8px 0 #07070755}
+html[data-theme=dark] .circuit-brand{color:#f7f7f7}html[data-theme=dark] .circuit-brand i{background-image:conic-gradient(#f7f7f7 25%,transparent 0 50%,#f7f7f7 0 75%,transparent 0)}
+html[data-theme=dark] :is(.circuit-nav,.circuit-nav button,.theme-toggle){background:#202020;color:#e9e9e9;border-color:#353535}
+html[data-theme=dark] .circuit-nav button.active{background:#0a0a0a;border-bottom-color:#ff3049;color:#fff}
+html[data-theme=dark] :is(.circuit-driver,.game-hud b,.question-counter b,.reveal-name,.reveal-name h2,.stats-row strong,.collection-meta>b,.modal h2,.detail-meta b,.detail-stats b,.review-total b,.typed-feedback b){color:#f1f1f1}
+html[data-theme=dark] :is(.panel,.mode-card,.car-card,.metric,.result-main,.result-review,.profile-banner,.achievement-card,.modal){background:#161616;border-color:#2e2e2e;color:#f1f1f1;box-shadow:none}
+html[data-theme=dark] .circuit-shell :is(.panel,.mode-card){border-top-color:#797979}
+html[data-theme=dark] .mode-card.selected{background:#1e1e1e;border-color:#ff3049;box-shadow:inset 0 -4px #ff3049}
+html[data-theme=dark] .mode-card:hover{background:#1f1f1f}
+html[data-theme=dark] :is(.eyebrow,.subtext,.mode-card p,.mode-card-bottom b span,.mode-card-bottom>.icon,.field-label,.field,.collection-meta,.pagination,.car-card-info>div,.profile-level>div>span,.profile-level>small,.metric>span,.stats-row>span,.setting-row small,.settings-side p,.guide-step p,.code-note,.import-panel>p,.import-panel>small,.game-hud,.question-counter,.question-counter small,.reward-text,.typed-answer>span,.answer-footer,.answer-help>p,.result-score>span,.result-main>p,.result-main>p:not(.eyebrow),.result-metrics>div>span,.review-row small,.review-total,.modal>p,.detail-meta,.detail-stats,.detail-meta span,.detail-stats>span,.circuit-driver small,.circuit-shell .app-footer,.welcome-copy,.welcome-note,.welcome-footer,.tutorial-modes p,.practice-feedback,.achievement-card p,.empty-state p){color:#bcbcbc}
 html[data-theme=dark] :is(.difficulty,.text-button,.answer-help>.text-button,.modal .eyebrow,.danger-link,.car-card-info>span){color:#ff8193}
-html[data-theme=dark] :is(.field>select,.field input,.search-field,.typed-answer,.modal input){background:#101720;color:#f0f4fa;border-color:#536279}
-html[data-theme=dark] :is(.search-field input,.typed-answer input){color:#f0f4fa}
-html[data-theme=dark] :is(.button,.format-option,.segmented,.stats-tabs button,.typed-feedback,.code-note){background:#2b3544;color:#e6ecf5;border-color:#506078;box-shadow:none}
-html[data-theme=dark] .button:hover:not(:disabled){background:#3b495e;border-color:#8b9bb2}
+html[data-theme=dark] :is(.field>select,.field input,.search-field,.typed-answer,.modal input){background:#0e0e0e;color:#f4f4f4;border-color:#606060}
+html[data-theme=dark] :is(.search-field input,.typed-answer input){color:#f4f4f4}
+html[data-theme=dark] :is(.button,.format-option,.segmented,.stats-tabs button,.typed-feedback,.code-note){background:#222222;color:#ebebeb;border-color:#5e5e5e;box-shadow:none}
+html[data-theme=dark] .button:hover:not(:disabled){background:#2f2f2f;border-color:#999999}
 html[data-theme=dark] .button.primary{background:#e40019;color:#fff;border-color:#ff3b53}html[data-theme=dark] .button.primary:hover:not(:disabled){background:#ff233c}
 html[data-theme=dark] .button.danger{background:#a71636;color:#fff}
-html[data-theme=dark] :is(.format-option.selected,.segmented button.active,.stats-tabs button.active){background:#0b111a;color:#fff;border-color:#ff3049}
-html[data-theme=dark] :is(.format-option small,.segmented button){color:#b6c2d4}html[data-theme=dark] .segmented button.active{color:#fff}
-html[data-theme=dark] .format-option>.icon{color:#e6ecf5}
-html[data-theme=dark] :is(.mode-card-bottom,.setting-row,.stats-row,.review-row,.review-total,.result-metrics){border-color:#3e4d61}
-html[data-theme=dark] :is(.thin-progress,.progress-bar,.welcome-progress>span){background:#465163}html[data-theme=dark] .welcome-progress>.active{background:#ff3049}
-html[data-theme=dark] :is(.car-card-stage,.detail-car,.empty-state,.tutorial-car){background:linear-gradient(165deg,#303d50,#141b25)}
-html[data-theme=dark] .circuit-shell .question-stage{background:linear-gradient(175deg,#35445b 0%,#202c3c 66%,#657388 66.3%,#313c4e 67%,#111822 100%);border-color:#52627b}
-html[data-theme=dark] .question-stage:before{background:linear-gradient(180deg,#52637c22,transparent 60%,#11182244)}
-html[data-theme=dark] .circuit-shell .question-stage.silhouette-stage{background:linear-gradient(175deg,#acb9cd,#6c7e98)}
-html[data-theme=dark] .stage-label{color:#d5deeb}html[data-theme=dark] .silhouette-stage .stage-label{color:#182536}
-html[data-theme=dark] .stage-bottom-label{background:#0f1725d9;color:#dbe4f2}
-html[data-theme=dark] .circuit-shell .game-hud{background:#252f3f;border-color:#8491a5}
-html[data-theme=dark] :is(.answer-option,.tutorial-modes>div){background:#222d3d;border-color:#52627a;color:#edf3fd;box-shadow:none}
-html[data-theme=dark] .answer-option:hover:not(:disabled){background:#35465c;border-color:#9fabc0}
+html[data-theme=dark] :is(.format-option.selected,.segmented button.active,.stats-tabs button.active){background:#0a0a0a;color:#fff;border-color:#ff3049}
+html[data-theme=dark] :is(.format-option small,.segmented button){color:#c1c1c1}html[data-theme=dark] .segmented button.active{color:#fff}
+html[data-theme=dark] .format-option>.icon{color:#ebebeb}
+html[data-theme=dark] :is(.mode-card-bottom,.setting-row,.stats-row,.review-row,.review-total,.result-metrics){border-color:#313131}
+html[data-theme=dark] :is(.thin-progress,.progress-bar,.welcome-progress>span){background:#343434}html[data-theme=dark] .welcome-progress>.active{background:#ff3049}
+html[data-theme=dark] :is(.car-card-stage,.detail-car,.empty-state,.tutorial-car){background:linear-gradient(165deg,#272727,#111111)}
+html[data-theme=dark] .circuit-shell .question-stage{background:linear-gradient(175deg,#2b2b2b 0%,#1c1c1c 66%,#727272 66.3%,#262626 67%,#0f0f0f 100%);border-color:#606060}
+html[data-theme=dark] .question-stage:before{background:linear-gradient(180deg,#61616122,transparent 60%,#0f0f0f44)}
+html[data-theme=dark] .circuit-shell .question-stage.silhouette-stage{background:linear-gradient(175deg,#b8b8b8,#7c7c7c)}
+html[data-theme=dark] .stage-label{color:#dddddd}html[data-theme=dark] .silhouette-stage .stage-label{color:#171717}
+html[data-theme=dark] .stage-bottom-label{background:#0e0e0ed9;color:#e3e3e3}
+html[data-theme=dark] .circuit-shell .game-hud{background:#1e1e1e;border-color:#909090}
+html[data-theme=dark] :is(.answer-option,.tutorial-modes>div){background:#1d1d1d;border-color:#606060;color:#f2f2f2;box-shadow:none}
+html[data-theme=dark] .answer-option:hover:not(:disabled){background:#2c2c2c;border-color:#aaaaaa}
 html[data-theme=dark] :is(.answer-option.is-correct,.tutorial-answers .practice-correct){background:#123d30;color:#a8f0cf;border-color:#50be90;opacity:1}
 html[data-theme=dark] :is(.answer-option.is-wrong,.tutorial-answers .practice-wrong){background:#512336;color:#ffbfce;border-color:#e96c8b;opacity:1}
 html[data-theme=dark] .answer-badge.correct{background:#123d30;color:#a8f0cf}html[data-theme=dark] .answer-badge.wrong{background:#512336;color:#ffbfce}
 html[data-theme=dark] :is(.availability.ok,.review-row>strong,.car-card-info b){color:#8be1b7}html[data-theme=dark] .availability{color:#f2c878}
-html[data-theme=dark] .achievement-token{background:#374254;color:#acb9cb}html[data-theme=dark] .achievement-token.earned{background:#debb58;color:#302500}
+html[data-theme=dark] .achievement-token{background:#2a2a2a;color:#b8b8b8}html[data-theme=dark] .achievement-token.earned{background:#debb58;color:#302500}
 html[data-theme=dark] .achievement-card.earned{background:linear-gradient(130deg,#413923,#25251f);border-color:#ad9143;color:#fff1bc}html[data-theme=dark] .achievement-card.earned p{color:#e2d6a9}
 html[data-theme=dark] .rank-label{color:#e5c56a}html[data-theme=dark] :is(.card-symbol,.dialog-symbol,.upload-symbol){color:#ff8094;background:#422c3a;border-color:#795061}
-html[data-theme=dark] :is(.game-hud .timer,.profile-bests-grid .best-chip){background:#283548;color:#e5edf8;border-color:#52647e}
+html[data-theme=dark] :is(.game-hud .timer,.profile-bests-grid .best-chip){background:#222222;color:#ececec;border-color:#626262}
 html[data-theme=dark] .game-hud .timer.urgent{background:#512336;color:#ffbfce}html[data-theme=dark] .game-hud .timer.urgent b{color:#ffbfce}
 html[data-theme=dark] .new-best{background:#354024;color:#dfef9f;border-color:#849b46}
 html[data-theme=dark] .welcome-card .error-note{color:#ff91a4}
 /* Night paddock. */
-html[data-theme=dark] :is(.is-racing-home,.is-racing-home .app-body,.race-home){background:#111820;color:#eef1f6}
-html[data-theme=dark] .race-stage{background:linear-gradient(180deg,#18212ff0 0%,#283445ed 42%,#34445699 65%,#131a24 100%),repeating-linear-gradient(110deg,#26374b 0 2px,#1d2939 2px 33px,#5d7189 34px 35px)}
-html[data-theme=dark] .race-title{color:#f0f4fa}html[data-theme=dark] .race-title strong{color:#ff233c}html[data-theme=dark] .race-branding{filter:none}html[data-theme=dark] .race-title .checker{background-image:conic-gradient(#eef3fb 25%,transparent 0 50%,#eef3fb 0 75%,transparent 0)}
-html[data-theme=dark] .race-watermark{color:#b7c8e21a}html[data-theme=dark] .race-side-note{color:#9cacc0}
-html[data-theme=dark] .race-controls{background:repeating-linear-gradient(115deg,transparent 0 65px,#ffffff03 65px 69px,transparent 69px 90px),#171f2b;border-color:#303c4e}
-html[data-theme=dark] .race-nav button{background:linear-gradient(110deg,#303d50,#1d2837);border-color:#73829a;border-left-color:#ff3049;color:#f0f5fc;box-shadow:3px 4px 0 #070b12}
-html[data-theme=dark] .race-nav button:hover{background:#35465c}html[data-theme=dark] .race-mode{background:#2c384b;border-color:#718098;color:#e9eff7}html[data-theme=dark] .race-mode.active{background:#080d15;color:#fff;border-color:#e6ff00}html[data-theme=dark] .race-mode:hover:not(.active){background:#41516b}
-html[data-theme=dark] .race-hint{color:#b7c3d5}html[data-theme=dark] .is-racing-home .topbar .top-profile{background:#17212deb;border-color:#64748a}html[data-theme=dark] .is-racing-home .topbar :is(.header-xp,.header-xp b){color:#eaf1fb}
-@media(max-width:650px){html[data-theme=dark] .circuit-nav button{background:none}html[data-theme=dark] .circuit-nav button.active{background:#0c1017}}
+html[data-theme=dark] :is(.is-racing-home,.is-racing-home .app-body,.race-home){background:#0f0f0f;color:#f1f1f1}
+html[data-theme=dark] .race-stage{background:linear-gradient(180deg,#151515f0 0%,#212121ed 42%,#2b2b2b99 65%,#101010 100%),repeating-linear-gradient(110deg,#222222 0 2px,#1a1a1a 2px 33px,#6e6e6e 34px 35px)}
+html[data-theme=dark] .race-title{color:#f4f4f4}html[data-theme=dark] .race-title strong{color:#ff233c}html[data-theme=dark] .race-branding{filter:none}html[data-theme=dark] .race-title .checker{background-image:conic-gradient(#f3f3f3 25%,transparent 0 50%,#f3f3f3 0 75%,transparent 0)}
+html[data-theme=dark] .race-watermark{color:#c6c6c61a}html[data-theme=dark] .race-side-note{color:#aaaaaa}
+html[data-theme=dark] .race-controls{background:repeating-linear-gradient(115deg,transparent 0 65px,#ffffff03 65px 69px,transparent 69px 90px),#141414;border-color:#262626}
+html[data-theme=dark] .race-nav button{background:linear-gradient(110deg,#272727,#191919);border-color:#818181;border-left-color:#ff3049;color:#f4f4f4;box-shadow:3px 4px 0 #070707}
+html[data-theme=dark] .race-nav button:hover{background:#2c2c2c}html[data-theme=dark] .race-mode{background:#242424;border-color:#7f7f7f;color:#eeeeee}html[data-theme=dark] .race-mode.active{background:#080808;color:#fff;border-color:#e6ff00}html[data-theme=dark] .race-mode:hover:not(.active){background:#333333}
+html[data-theme=dark] .race-hint{color:#c2c2c2}html[data-theme=dark] .is-racing-home .topbar .top-profile{background:#151515eb;border-color:#727272}html[data-theme=dark] .is-racing-home .topbar :is(.header-xp,.header-xp b){color:#f0f0f0}
+@media(max-width:650px){html[data-theme=dark] .circuit-nav button{background:none}html[data-theme=dark] .circuit-nav button.active{background:#0a0a0a}}
 
-html[data-theme="dark"] .mode-card-bottom{color:#edf2f8}
+html[data-theme="dark"] .mode-card-bottom{color:#f1f1f1}
 
 html[data-theme="dark"] .tutorial-modes>div>span{color:#ff5268}
 @media(min-width:901px){.race-side-note{top:max(38%,calc(3.6% + clamp(72px,9.4vw,165px) * 1.7))}}
+
+html[data-theme=dark] .welcome-emblem{background:#111}
+html[data-theme=dark]{--blue:#ff3049}
+html[data-theme=dark] :is(button,a,input,select,label[tabindex]):focus-visible,html[data-theme=dark] .race-home button:focus-visible,html[data-theme=dark] .race-launch:focus-visible{outline-color:#fff}
+html[data-theme=dark] .search-field:focus-within{border-color:#aaa}
+html[data-theme=dark] .setting-row input:focus-visible+.toggle{outline-color:#fff}
+html[data-theme=dark] :is(.pause-emblem,.mode-icon,.lock-badge,.toast){background:#161616;border-color:#444}
+html[data-theme=dark] .mode-card.selected .mode-icon{background:#e40019}
+html[data-theme=dark] :is(.mode-number,.lock-badge){color:#bcbcbc}
+html[data-theme=dark] :is(.answer-footer>span,.typed-feedback span,.stats-row small,.achievement-card small,#import-progress,.image-loading){color:#aaa}
+html[data-theme=dark] .answer-key{background:#202020}
+html[data-theme=dark] .toggle:after{background:#aaa}
+html[data-theme=dark] .modal::backdrop{background:#000b}
+html[data-theme=dark] :is(.race-pit,.race-gantry){filter:grayscale(1)}
+html[data-theme=dark] .race-stage:after{filter:grayscale(1)}
+
+html[data-theme=dark] .toggle{background:#333}
+html[data-theme=dark] .setting-row input:checked+.toggle{background:#e40019}
+html[data-theme=dark] .setting-row input:checked+.toggle:after{background:#fff}
