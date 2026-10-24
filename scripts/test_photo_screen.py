@@ -1,11 +1,14 @@
 """Offline tests: a second visible vehicle always disqualifies a source photo."""
 import runpy
 import unittest
+import numpy as np
+from PIL import Image
 from pathlib import Path
 
 script = runpy.run_path(str(Path(__file__).with_name("approve-photos.py")))
 review = script["review"]
 overlap = script["overlap"]
+detect_vehicles = script["detect_vehicles"]
 
 
 class PhotoScreenTests(unittest.TestCase):
@@ -32,6 +35,23 @@ class PhotoScreenTests(unittest.TestCase):
     def test_missing_or_uncertain_car_rejected(self):
         self.assertFalse(review([])[0])
         self.assertFalse(review([{"class": "car", "confidence": 0.24, "bbox": [40, 100, 500, 490]}])[0])
+
+    def test_detector_respects_model_dimensions(self):
+        class Input:
+            name = "images"
+            shape = [1, 3, 480, 640]
+        class FakeModel:
+            def get_inputs(self):
+                return [Input()]
+            def run(self, unused, feeds):
+                assert feeds["images"].shape == (1, 3, 480, 640)
+                out = np.zeros((1, 84, 4), dtype=np.float32)
+                out[0, :4, 0] = [320, 250, 400, 200]
+                out[0, 4 + 2, 0] = 0.9
+                return [out]
+        hits = detect_vehicles(FakeModel(), Image.new("RGB", (1200, 800)))
+        self.assertEqual(len(hits), 1)
+        self.assertTrue(review(hits)[0])
 
     def test_nms_iou(self):
         self.assertAlmostEqual(overlap([0, 0, 100, 100], [0, 0, 100, 100]), 1)

@@ -90,9 +90,14 @@ def overlap(a, b):
 
 
 def detect_vehicles(model, photo):
-    # Ultralytics YOLOv8n ONNX: RGB input [1,3,640,640]; output [1,84,8400].
-    # Resize entire scene (not just the vehicle) to check for background traffic.
-    rgb = photo.convert("RGB").resize((640, 640), Image.Resampling.BILINEAR)
+    # This pinned ONNX export uses [1,3,480,640]. Respect the model input
+    # shape instead of assuming a square 640x640 tensor.
+    input_shape = model.get_inputs()[0].shape
+    height, width = input_shape[2:4]
+    if not isinstance(height, int) or not isinstance(width, int):
+        raise ValueError(f"Unsupported dynamic detector size: {input_shape}")
+    # Resize the *whole* scene to retain small background vehicles.
+    rgb = photo.convert("RGB").resize((width, height), Image.Resampling.BILINEAR)
     arr = np.asarray(rgb, dtype=np.float32) / 255.0
     tensor = np.transpose(arr, (2, 0, 1))[None, ...]
     output = model.run(None, {model.get_inputs()[0].name: tensor})[0]
@@ -111,10 +116,10 @@ def detect_vehicles(model, photo):
     candidates = []
     for i in hits:
         cx, cy, w, h = map(float, detections[:4, i])
-        if w * h < 640 * 640 * 0.0025:
+        if w * h < width * height * 0.0025:
             continue
         box = [max(0, cx - w / 2), max(0, cy - h / 2),
-               min(640, cx + w / 2), min(640, cy + h / 2)]
+               min(width, cx + w / 2), min(height, cy + h / 2)]
         if box[2] <= box[0] or box[3] <= box[1]:
             continue
         candidates.append({
@@ -175,7 +180,9 @@ def main():
         if car.get("photo") and photo_path.is_file():
             approved.append({"id": car["id"], "reason": "Photo already accepted in prior run"})
             continue
-        if car["id"] in previous_rejects and os.environ.get("RECHECK_PHOTOS") != "1":
+        if (car["id"] in previous_rejects
+                and not previous_rejects[car["id"]]["reason"].startswith("Verification unavailable")
+                and os.environ.get("RECHECK_PHOTOS") != "1"):
             rejected.append(previous_rejects[car["id"]])
             continue
         try:
