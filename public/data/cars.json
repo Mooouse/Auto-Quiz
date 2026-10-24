@@ -106,9 +106,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:NSXside.jpg",
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/honda-nsx-na1-photo.jpg"
   },
   {
     "id": "bmw-m3-e46",
@@ -309,9 +310,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_R8.jpg",
       "license": "CC BY-SA 2.0 BE",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/be/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/audi-r8-type42-photo.jpg"
   },
   {
     "id": "ferrari-458-italia",
@@ -334,9 +336,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:0_458_Italia.jpg",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/ferrari-458-italia-photo.jpg"
   },
   {
     "id": "nissan-350z",
@@ -461,9 +464,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corvette_C7.jpg",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/chevrolet-corvette-c7-photo.jpg"
   },
   {
     "id": "ferrari-laferrari",
@@ -486,9 +490,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_Laferrari_1.jpg",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/ferrari-laferrari-photo.jpg"
   },
   {
     "id": "bugatti-chiron",
@@ -562,9 +567,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_GT.jpg",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/ford-gt-2005-photo.jpg"
   },
   {
     "id": "bugatti-veyron",
@@ -612,9 +618,10 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenigsegg_Agera_RSR.jpg",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/koenigsegg-agera-rsr-photo.jpg"
   },
   {
     "id": "mercedes-amg-gt-c190",
@@ -714,8 +721,9 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008MitsubishiLancerEvoIX.jpg",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
+    "photo": "cars/mitsubishi-lancer-evo-ix-photo.jpg"
   }
 ]
