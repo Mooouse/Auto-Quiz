@@ -6,6 +6,8 @@ export interface Car {
  id: string; brand: string; model: string; generation: string; modification: string;
  fullName: string; aliases: string[]; image: string; categories: string[]; difficulty: number;
  years?: string; info?: string; origin?: 'generated' | 'photograph'; credits?: PhotoCredit;
+ /** Original scene photo (after approval). image remains the transparent silhouette source. */
+ photo?: string;
 }
 export interface Filters { category: string; brand: string }
 export interface SessionConfig extends Filters { mode: Mode; format: Format }

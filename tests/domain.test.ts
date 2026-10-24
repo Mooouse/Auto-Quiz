@@ -110,3 +110,12 @@ test('photographs require author, license, original source and edit history',()=
  assert.ok(validateCatalog([{...base,credits:{...credit,changes:''}}]).issues.some(i=>i.code==='credits'));
  assert.ok(validateCatalog([{...base,origin:'forged',credits:credit}]).issues.some(i=>i.code==='origin'));
 });
+
+test('photo-frame metadata preserves independent transparent silhouette and rejects unsafe files',()=>{
+ const credit={author:'Photographer',sourceUrl:'https://commons.wikimedia.org/wiki/File:Car.jpg',license:'CC BY 4.0',licenseUrl:'https://creativecommons.org/licenses/by/4.0/',changes:'Resized for game'};
+ const car={...cars[0],origin:'photograph',credits:credit,photo:'cars/fixture-photo.jpg'};
+ const v=validateCatalog([car]);assert.equal(v.issues.length,0);assert.equal(v.cars[0].photo,car.photo);assert.equal(v.cars[0].image,cars[0].image);
+ for(const bad of ['https://remote/vehicle.jpg','cars/../other.jpg','cars/photo.svg','cars/fixture-0.png'])assert.ok(validateCatalog([{...car,photo:bad}]).issues.length>0,bad);
+ assert.ok(validateCatalog([{...car,origin:'generated'}]).issues.some(i=>i.code==='photo-origin'));
+ assert.ok(validateCatalog([{...car,photo:7}]).issues.some(i=>i.code==='photo'));
+});
