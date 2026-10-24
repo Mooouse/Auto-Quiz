@@ -99,3 +99,14 @@ test('theme and completed onboarding survive saving; malformed preferences canno
  const invalid=hydrateProfile({...p,onboardingCompleted:'true',settings:{...p.settings,theme:'unknown'}},'en');
  assert.equal(invalid.onboardingCompleted,false);assert.equal(invalid.settings.theme,'light');
 });
+
+test('photographs require author, license, original source and edit history',()=>{
+ const base={...cars[0],origin:'photograph' as const};
+ const credit={author:'Example Author',sourceUrl:'https://commons.wikimedia.org/wiki/File:Example.jpg',license:'CC BY-SA 4.0',licenseUrl:'https://creativecommons.org/licenses/by-sa/4.0/',changes:'Background removed'};
+ assert.equal(validateCatalog([{...base,credits:credit}]).cars.length,1);
+ assert.ok(validateCatalog([base]).issues.some(i=>i.code==='credits'));
+ assert.ok(validateCatalog([{...base,credits:{...credit,sourceUrl:'javascript:alert(1)'}}]).issues.some(i=>i.code==='credit-url'));
+ assert.ok(validateCatalog([{...base,credits:{...credit,licenseUrl:'http://example.com'}}]).issues.some(i=>i.code==='credit-url'));
+ assert.ok(validateCatalog([{...base,credits:{...credit,changes:''}}]).issues.some(i=>i.code==='credits'));
+ assert.ok(validateCatalog([{...base,origin:'forged',credits:credit}]).issues.some(i=>i.code==='origin'));
+});

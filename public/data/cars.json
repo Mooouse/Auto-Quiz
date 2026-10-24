@@ -17,7 +17,8 @@
       "Sports Cars"
     ],
     "difficulty": 2,
-    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork.",
+    "origin": "generated"
   },
   {
     "id": "toyota-supra-a80",
@@ -38,7 +39,8 @@
       "Sports Cars"
     ],
     "difficulty": 2,
-    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork.",
+    "origin": "generated"
   },
   {
     "id": "mazda-rx7-fd",
@@ -58,7 +60,8 @@
       "Sports Cars"
     ],
     "difficulty": 2,
-    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork.",
+    "origin": "generated"
   },
   {
     "id": "nissan-silvia-s15",
@@ -77,6 +80,7 @@
       "Sports Cars"
     ],
     "difficulty": 2,
-    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork."
+    "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork.",
+    "origin": "generated"
   }
 ]

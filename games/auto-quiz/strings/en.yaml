@@ -291,5 +291,15 @@
   "tutorialNoScore": "Practice does not affect your scores or collection.",
   "tutorialWrong": "Good try! The right answer is",
   "tutorialProgress": "Correct answers earn XP and unlock cars in your collection. You can pause a session at any time.",
-  "tutorialFinish": "Let’s play"
+  "tutorialFinish": "Let’s play",
+  "creditsTitle": "Photos and credits",
+  "creditsIntro": "Image sources, photographers, licenses and changes made to originals.",
+  "creditsSummary": "Cars: {total}. Photographs with documented sources: {photos}.",
+  "creditsGenerated": "AI-generated starter artwork.",
+  "creditsPhotograph": "Real photograph",
+  "creditsUnspecified": "Image provenance was not provided.",
+  "creditsAuthor": "Photographer",
+  "creditsLicense": "License",
+  "creditsChanges": "Edits",
+  "creditsOriginal": "View original"
 }

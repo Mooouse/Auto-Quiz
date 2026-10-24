@@ -20,7 +20,12 @@ export function validateCatalog(data: unknown): {cars: Car[]; issues: CatalogIss
   const image=(r.image as string).replace(/^\//,'').replace(/^\.\//,'');
   if(!/^(?:assets\/)?cars\/[a-zA-Z0-9_./-]+\.png$/i.test(image)||image.split('/').includes('..')){issues.push({code:'image',detail:`${r.id}: ${r.image}`});continue;}
   if(['generation','modification','years','info'].some(k=>r[k]!==undefined&&typeof r[k]!=='string')){issues.push({code:'optional',detail:`${r.id}`});continue;}
-  const car:Car={id:r.id as string,brand:(r.brand as string).trim(),model:(r.model as string).trim(),fullName:(r.fullName as string).trim(),generation:(r.generation as string)||'',modification:(r.modification as string)||'',image,aliases:r.aliases as string[],categories:[...new Set((r.categories as string[]).map(x=>x.trim()))],difficulty:r.difficulty as number,...(r.years?{years:r.years as string}:{}),...(r.info?{info:r.info as string}:{})};
+  if(r.origin!==undefined&&r.origin!=='generated'&&r.origin!=='photograph'){issues.push({code:'origin',detail:String(r.id)});continue;}
+  const credit=r.credits as Record<string,unknown>|undefined;
+  const keys=['author','sourceUrl','license','licenseUrl','changes'];
+  if((r.origin==='photograph'&&!credit)||(credit!==undefined&&(!credit||typeof credit!=='object'||Array.isArray(credit)||keys.some(k=>typeof credit[k]!=='string'||!(credit[k] as string).trim())))){issues.push({code:'credits',detail:String(r.id)});continue;}
+  if(credit){const https=(s:string)=>{try{const u=new URL(s);return u.protocol==='https:'&&!!u.hostname&&!u.username&&!u.password;}catch{return false;}};if(!https(credit.sourceUrl as string)||!https(credit.licenseUrl as string)){issues.push({code:'credit-url',detail:String(r.id)});continue;}}
+  const car:Car={id:r.id as string,brand:(r.brand as string).trim(),model:(r.model as string).trim(),fullName:(r.fullName as string).trim(),generation:(r.generation as string)||'',modification:(r.modification as string)||'',image,aliases:r.aliases as string[],categories:[...new Set((r.categories as string[]).map(x=>x.trim()))],difficulty:r.difficulty as number,...(r.years?{years:r.years as string}:{}),...(r.info?{info:r.info as string}:{}),...(r.origin?{origin:r.origin as 'generated'|'photograph'}:{}),...(credit?{credits:{author:credit.author as string,sourceUrl:credit.sourceUrl as string,license:credit.license as string,licenseUrl:credit.licenseUrl as string,changes:credit.changes as string}}:{})};
   const identity=JSON.stringify([car.brand,car.model,car.generation,car.modification].map(normalizeAnswer));
   if(identities.has(identity))issues.push({code:'duplicate-model',detail:`${car.id} / ${identities.get(identity)}`});
   identities.set(identity,car.id);

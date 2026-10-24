@@ -1,10 +1,11 @@
 export type Mode = 'photo' | 'expert' | 'silhouette' | 'master';
 export type Format = 'classic' | 'marathon' | 'timed';
 export type Language = 'ru' | 'en';
+export interface PhotoCredit { author: string; sourceUrl: string; license: string; licenseUrl: string; changes: string }
 export interface Car {
  id: string; brand: string; model: string; generation: string; modification: string;
  fullName: string; aliases: string[]; image: string; categories: string[]; difficulty: number;
- years?: string; info?: string;
+ years?: string; info?: string; origin?: 'generated' | 'photograph'; credits?: PhotoCredit;
 }
 export interface Filters { category: string; brand: string }
 export interface SessionConfig extends Filters { mode: Mode; format: Format }
