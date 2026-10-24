@@ -1,0 +1,111 @@
+{
+  "rule": "Only one detectable car and no other detectable vehicle in the source photo.",
+  "detector": "YOLOv8n COCO ONNX SHA256 pinned; conservative automated screening only",
+  "manuallyReviewed": false,
+  "warning": "Small, obscured or distant background cars may go undetected. Human visual review remains necessary.",
+  "approved": [],
+  "rejected": [
+    {
+      "id": "honda-nsx-na1",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "bmw-m3-e46",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "ferrari-f40",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "dodge-viper",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "mazda-rx7-fb",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "subaru-impreza-wrx-sti-gd",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "porsche-carrera-gt",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "toyota-ae86",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "audi-r8-type42",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "ferrari-458-italia",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "nissan-350z",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "bmw-m5-e60",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "mclaren-p1",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "lamborghini-huracan",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "chevrolet-corvette-c7",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "ferrari-laferrari",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "bugatti-chiron",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "porsche-911-gt3-rs",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "ford-gt-2005",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "bugatti-veyron",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "koenigsegg-agera-rsr",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "mercedes-amg-gt-c190",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "bmw-m5-f90",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "bmw-m3-e30",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    },
+    {
+      "id": "mitsubishi-lancer-evo-ix",
+      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+    }
+  ],
+  "totalOriginalPhotos": 0,
+  "totalCars": 29
+}
