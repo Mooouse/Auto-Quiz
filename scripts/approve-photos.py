@@ -109,9 +109,12 @@ def detect_vehicles(model, photo):
     if detections.shape[0] != 84:
         raise ValueError(f"Unsupported detector tensor {detections.shape}")
     indices = list(COCO_VEHICLES.keys())
-    scores = detections[indices, :]
+    # YOLOv8 channels 0..3 are bounding-box coordinates; 4..83 are class scores.
+    scores = detections[[4 + idx for idx in indices], :]
     strongest_class = np.argmax(scores, axis=0)
     strongest_score = np.max(scores, axis=0)
+    if not np.all(np.isfinite(strongest_score)) or np.max(strongest_score)>1.0001:
+        raise ValueError("Invalid detector class scores; do not trust scene")
     hits = np.where(strongest_score >= 0.21)[0]
     candidates = []
     for i in hits:
@@ -182,6 +185,7 @@ def main():
             continue
         if (car["id"] in previous_rejects
                 and not previous_rejects[car["id"]]["reason"].startswith("Verification unavailable")
+                and not any(hit.get("confidence", 0)>1 for hit in previous_rejects[car["id"]].get("detected", []))
                 and os.environ.get("RECHECK_PHOTOS") != "1"):
             rejected.append(previous_rejects[car["id"]])
             continue

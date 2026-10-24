@@ -51,6 +51,7 @@ class PhotoScreenTests(unittest.TestCase):
                 return [out]
         hits = detect_vehicles(FakeModel(), Image.new("RGB", (1200, 800)))
         self.assertEqual(len(hits), 1)
+        self.assertAlmostEqual(hits[0]["confidence"], 0.9, places=3)
         self.assertTrue(review(hits)[0])
 
     def test_nms_iou(self):
