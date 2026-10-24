@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "policy": "Reject original-background photographs when any other vehicle is visible or suspected in the full scene; preserve existing transparent PNG for gameplay.",
+  "checked": "2026-10-24",
+  "decisions": {
+    "honda-nsx-na1": {
+      "decision": "accept",
+      "reason": "Single car; no other vehicles visible in inspected full-scene JPEG."
+    },
+    "ford-gt-2005": {
+      "decision": "accept",
+      "reason": "Single car; no other vehicles visible in inspected full-scene JPEG."
+    },
+    "mitsubishi-lancer-evo-ix": {
+      "decision": "accept",
+      "reason": "Single identifiable car on course; no other vehicles visible in inspected full-scene JPEG."
+    },
+    "audi-r8-type42": {
+      "decision": "reject",
+      "reason": "Ambiguous additional display vehicle at upper-left background; conservative exclusion."
+    },
+    "ferrari-458-italia": {
+      "decision": "reject",
+      "reason": "Second silver vehicle visible at far right edge."
+    },
+    "chevrolet-corvette-c7": {
+      "decision": "reject",
+      "reason": "Several parked cars visible at long distance on the road in background."
+    },
+    "ferrari-laferrari": {
+      "decision": "reject",
+      "reason": "Suspicious other vehicle behind car at upper-right; conservative exclusion."
+    },
+    "koenigsegg-agera-rsr": {
+      "decision": "reject",
+      "reason": "Another blue vehicle visibly present at right side."
+    }
+  }
+}

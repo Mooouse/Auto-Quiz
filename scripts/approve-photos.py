@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CATALOG = ROOT / "public/data/cars.json"
 MANIFEST = ROOT / "data/commons-batch-01.json"
 REPORT = ROOT / "docs/PHOTO-FRAME-AUDIT.json"
+REVIEW = ROOT / "docs/PHOTO-VISUAL-REVIEW.json"
 MODEL = ROOT / ".photo-checker.onnx"
 MODEL_URL = "https://huggingface.co/unileon-robotics/YOLO8-ONNX/resolve/main/yolov8n.onnx"
 MODEL_SHA256 = "fa2c856b0effedce4f49fffd121f438247a64c8f633bf0e6d5e5960e869ccc5a"
@@ -169,6 +170,8 @@ def main():
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
     manifest = {e["id"]: e for e in json.loads(MANIFEST.read_text(encoding="utf-8"))["cars"]}
     previous = json.loads(REPORT.read_text()) if REPORT.exists() else {}
+    review = json.loads(REVIEW.read_text()) if REVIEW.exists() else {}
+    manual = review.get("decisions", {})
     previous_rejects = {e["id"]: e for e in previous.get("rejected", [])}
     approved = []
     rejected = []
@@ -180,8 +183,17 @@ def main():
         if item is None or car.get("origin") != "photograph":
             continue
         photo_path = ROOT / "public/cars" / (car["id"] + "-photo.jpg")
+        judgement = manual.get(car["id"], {})
+        if judgement.get("decision") == "reject":
+            # Human review overrides machine approval. Remove the unwanted full
+            # scene entirely; the existing silhouette PNG remains playable.
+            if photo_path.exists():
+                photo_path.unlink()
+            car.pop("photo", None)
+            rejected.append({"id": car["id"], "reason": "Visual QA: " + judgement["reason"]})
+            continue
         if car.get("photo") and photo_path.is_file():
-            approved.append({"id": car["id"], "reason": "Photo already accepted in prior run"})
+            approved.append({"id": car["id"], "reason": "Human-reviewed acceptable photo" if judgement.get("decision") == "accept" else "Photo already accepted in prior run"})
             continue
         if (car["id"] in previous_rejects
                 and not previous_rejects[car["id"]]["reason"].startswith("Verification unavailable")
@@ -220,7 +232,7 @@ def main():
     REPORT.write_text(json.dumps({
         "rule": "Only one detectable car and no other detectable vehicle in the source photo.",
         "detector": "YOLOv8n COCO ONNX SHA256 pinned; conservative automated screening only",
-        "manuallyReviewed": False,
+        "manuallyReviewed": all(manual.get(c["id"], {}).get("decision") == "accept" for c in data if c.get("photo")),
         "warning": "Small, obscured or distant background cars may go undetected. Human visual review remains necessary.",
         "approved": approved, "rejected": rejected,
         "totalOriginalPhotos": len([c for c in data if c.get("photo")]),

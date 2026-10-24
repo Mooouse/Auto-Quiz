@@ -312,8 +312,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/be/",
       "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
-    "photo": "cars/audi-r8-type42-photo.jpg"
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
   },
   {
     "id": "ferrari-458-italia",
@@ -338,8 +337,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
-    "photo": "cars/ferrari-458-italia-photo.jpg"
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
   },
   {
     "id": "nissan-350z",
@@ -466,8 +464,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
-    "photo": "cars/chevrolet-corvette-c7-photo.jpg"
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
   },
   {
     "id": "ferrari-laferrari",
@@ -492,8 +489,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
-    "photo": "cars/ferrari-laferrari-photo.jpg"
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
   },
   {
     "id": "bugatti-chiron",
@@ -620,8 +616,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG. Original scene also resized and exported as JPEG for framed photo modes."
     },
-    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page.",
-    "photo": "cars/koenigsegg-agera-rsr-photo.jpg"
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
   },
   {
     "id": "mercedes-amg-gt-c190",
