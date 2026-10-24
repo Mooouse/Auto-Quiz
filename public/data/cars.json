@@ -82,5 +82,640 @@
     "difficulty": 2,
     "info": "Изображение создано ИИ для стартового набора. AI-generated starter artwork.",
     "origin": "generated"
+  },
+  {
+    "id": "honda-nsx-na1",
+    "brand": "Honda",
+    "model": "NSX",
+    "generation": "NA1",
+    "modification": "",
+    "fullName": "Honda NSX NA1",
+    "aliases": [
+      "Honda NSX First Generation"
+    ],
+    "image": "cars/honda-nsx-na1.png",
+    "categories": [
+      "Japanese",
+      "JDM",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "NSX-Racer",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NSXside.jpg",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "bmw-m3-e46",
+    "brand": "BMW",
+    "model": "M3",
+    "generation": "E46",
+    "modification": "",
+    "fullName": "BMW M3 E46",
+    "aliases": [],
+    "image": "cars/bmw-m3-e46.png",
+    "categories": [
+      "German",
+      "Sports Cars"
+    ],
+    "difficulty": 2,
+    "origin": "photograph",
+    "credits": {
+      "author": "Calreyn88",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M3_E46.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "ferrari-f40",
+    "brand": "Ferrari",
+    "model": "F40",
+    "generation": "",
+    "modification": "",
+    "fullName": "Ferrari F40",
+    "aliases": [],
+    "image": "cars/ferrari-f40.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "Fishyfool",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1990_Ferrari_F40_0.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "dodge-viper",
+    "brand": "Dodge",
+    "model": "Viper",
+    "generation": "",
+    "modification": "",
+    "fullName": "Dodge Viper",
+    "aliases": [],
+    "image": "cars/dodge-viper.png",
+    "categories": [
+      "American",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Frankie Fouganthin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Gumball_3000_-_Dodge_Viper_-3.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "mazda-rx7-fb",
+    "brand": "Mazda",
+    "model": "RX-7",
+    "generation": "FB",
+    "modification": "",
+    "fullName": "Mazda RX-7 FB",
+    "aliases": [
+      "Mazda RX7 FB"
+    ],
+    "image": "cars/mazda-rx7-fb.png",
+    "categories": [
+      "Japanese",
+      "JDM",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Accord14",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda-RX-7.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "subaru-impreza-wrx-sti-gd",
+    "brand": "Subaru",
+    "model": "Impreza WRX STI",
+    "generation": "GD",
+    "modification": "",
+    "fullName": "Subaru Impreza WRX STI GD",
+    "aliases": [
+      "Subaru Impreza STI GD"
+    ],
+    "image": "cars/subaru-impreza-wrx-sti-gd.png",
+    "categories": [
+      "Japanese",
+      "JDM",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Calreyn88",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Subaru_Impreza_WRX_STi.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "porsche-carrera-gt",
+    "brand": "Porsche",
+    "model": "Carrera GT",
+    "generation": "",
+    "modification": "",
+    "fullName": "Porsche Carrera GT",
+    "aliases": [],
+    "image": "cars/porsche-carrera-gt.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "Accord14",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrera_GT.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "toyota-ae86",
+    "brand": "Toyota",
+    "model": "AE86",
+    "generation": "",
+    "modification": "",
+    "fullName": "Toyota AE86",
+    "aliases": [],
+    "image": "cars/toyota-ae86.png",
+    "categories": [
+      "Japanese",
+      "JDM",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Calreyn88",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_AE86.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "audi-r8-type42",
+    "brand": "Audi",
+    "model": "R8",
+    "generation": "Type 42",
+    "modification": "",
+    "fullName": "Audi R8 Type 42",
+    "aliases": [
+      "Audi R8 First Generation"
+    ],
+    "image": "cars/audi-r8-type42.png",
+    "categories": [
+      "German",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Lennart Coopmans",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_R8.jpg",
+      "license": "CC BY-SA 2.0 BE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/be/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "ferrari-458-italia",
+    "brand": "Ferrari",
+    "model": "458 Italia",
+    "generation": "",
+    "modification": "",
+    "fullName": "Ferrari 458 Italia",
+    "aliases": [],
+    "image": "cars/ferrari-458-italia.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "Benespit",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:0_458_Italia.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "nissan-350z",
+    "brand": "Nissan",
+    "model": "350Z",
+    "generation": "",
+    "modification": "",
+    "fullName": "Nissan 350Z",
+    "aliases": [
+      "Nissan Fairlady Z Z33"
+    ],
+    "image": "cars/nissan-350z.png",
+    "categories": [
+      "Japanese",
+      "JDM",
+      "Sports Cars"
+    ],
+    "difficulty": 2,
+    "origin": "photograph",
+    "credits": {
+      "author": "Master of Contributions",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_350Z.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "bmw-m5-e60",
+    "brand": "BMW",
+    "model": "M5",
+    "generation": "E60",
+    "modification": "",
+    "fullName": "BMW M5 E60",
+    "aliases": [],
+    "image": "cars/bmw-m5-e60.png",
+    "categories": [
+      "German",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "JanS",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M5.JPG",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "mclaren-p1",
+    "brand": "McLaren",
+    "model": "P1",
+    "generation": "",
+    "modification": "",
+    "fullName": "McLaren P1",
+    "aliases": [],
+    "image": "cars/mclaren-p1.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "Calreyn88",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:McLaren_P1_1.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "lamborghini-huracan",
+    "brand": "Lamborghini",
+    "model": "Huracan",
+    "generation": "",
+    "modification": "",
+    "fullName": "Lamborghini Huracan",
+    "aliases": [
+      "Lamborghini Huracán"
+    ],
+    "image": "cars/lamborghini-huracan.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Accord14",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lambo_HURACAN.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "chevrolet-corvette-c7",
+    "brand": "Chevrolet",
+    "model": "Corvette",
+    "generation": "C7",
+    "modification": "",
+    "fullName": "Chevrolet Corvette C7",
+    "aliases": [],
+    "image": "cars/chevrolet-corvette-c7.png",
+    "categories": [
+      "American",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "A1AA1A",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corvette_C7.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "ferrari-laferrari",
+    "brand": "Ferrari",
+    "model": "LaFerrari",
+    "generation": "",
+    "modification": "",
+    "fullName": "Ferrari LaFerrari",
+    "aliases": [],
+    "image": "cars/ferrari-laferrari.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 5,
+    "origin": "photograph",
+    "credits": {
+      "author": "Calreyn88",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_Laferrari_1.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "bugatti-chiron",
+    "brand": "Bugatti",
+    "model": "Chiron",
+    "generation": "",
+    "modification": "",
+    "fullName": "Bugatti Chiron",
+    "aliases": [],
+    "image": "cars/bugatti-chiron.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "MrWalkr",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Bugatti_Chiron.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "porsche-911-gt3-rs",
+    "brand": "Porsche",
+    "model": "911 GT3 RS",
+    "generation": "",
+    "modification": "",
+    "fullName": "Porsche 911 GT3 RS",
+    "aliases": [],
+    "image": "cars/porsche-911-gt3-rs.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "Oleg Yunakov",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_GT3_RS_-_01.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "ford-gt-2005",
+    "brand": "Ford",
+    "model": "GT",
+    "generation": "2005",
+    "modification": "",
+    "fullName": "Ford GT 2005",
+    "aliases": [
+      "Ford GT First Generation"
+    ],
+    "image": "cars/ford-gt-2005.png",
+    "categories": [
+      "American",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "Stefan-Xp",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_GT.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "bugatti-veyron",
+    "brand": "Bugatti",
+    "model": "Veyron",
+    "generation": "",
+    "modification": "",
+    "fullName": "Bugatti Veyron",
+    "aliases": [],
+    "image": "cars/bugatti-veyron.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 4,
+    "origin": "photograph",
+    "credits": {
+      "author": "Alexandre Prevot",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_(55041555149).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "koenigsegg-agera-rsr",
+    "brand": "Koenigsegg",
+    "model": "Agera RSR",
+    "generation": "",
+    "modification": "",
+    "fullName": "Koenigsegg Agera RSR",
+    "aliases": [],
+    "image": "cars/koenigsegg-agera-rsr.png",
+    "categories": [
+      "Supercars",
+      "European",
+      "Sports Cars"
+    ],
+    "difficulty": 5,
+    "origin": "photograph",
+    "credits": {
+      "author": "Miguel1702",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenigsegg_Agera_RSR.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "mercedes-amg-gt-c190",
+    "brand": "Mercedes-Benz",
+    "model": "AMG GT",
+    "generation": "C190",
+    "modification": "",
+    "fullName": "Mercedes-Benz AMG GT C190",
+    "aliases": [
+      "Mercedes AMG GT C190"
+    ],
+    "image": "cars/mercedes-amg-gt-c190.png",
+    "categories": [
+      "German",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Calreyn88",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_AMG_GT.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "bmw-m5-f90",
+    "brand": "BMW",
+    "model": "M5",
+    "generation": "F90",
+    "modification": "",
+    "fullName": "BMW M5 F90",
+    "aliases": [],
+    "image": "cars/bmw-m5-f90.png",
+    "categories": [
+      "German",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Alexander Migl",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M5_(F90)_1X7A6242.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "bmw-m3-e30",
+    "brand": "BMW",
+    "model": "M3",
+    "generation": "E30",
+    "modification": "",
+    "fullName": "BMW M3 E30",
+    "aliases": [],
+    "image": "cars/bmw-m3-e30.png",
+    "categories": [
+      "German",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Wikisympathisant",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M3_E30_2026-08.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
+  },
+  {
+    "id": "mitsubishi-lancer-evo-ix",
+    "brand": "Mitsubishi",
+    "model": "Lancer Evolution",
+    "generation": "IX",
+    "modification": "",
+    "fullName": "Mitsubishi Lancer Evolution IX",
+    "aliases": [
+      "Mitsubishi Lancer Evo 9",
+      "Mitsubishi Lancer Evo IX"
+    ],
+    "image": "cars/mitsubishi-lancer-evo-ix.png",
+    "categories": [
+      "Japanese",
+      "JDM",
+      "Sports Cars"
+    ],
+    "difficulty": 3,
+    "origin": "photograph",
+    "credits": {
+      "author": "Brian Snelson",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008MitsubishiLancerEvoIX.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Background removed with U2Net; resized, cropped and exported as transparent PNG."
+    },
+    "info": "Real photograph from Wikimedia Commons. Full photo attribution and license on the credits page."
   }
 ]
