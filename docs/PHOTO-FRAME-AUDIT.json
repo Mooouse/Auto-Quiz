@@ -7,103 +7,3903 @@
   "rejected": [
     {
       "id": "honda-nsx-na1",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 628.67,
+          "bbox": [
+            2.1,
+            85.7,
+            630.8,
+            433.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 604.46,
+          "bbox": [
+            8.1,
+            39.7,
+            612.5,
+            265.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 597.788,
+          "bbox": [
+            24.5,
+            241.6,
+            622.3,
+            444.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 566.197,
+          "bbox": [
+            50.3,
+            318.0,
+            616.5,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 554.742,
+          "bbox": [
+            49.0,
+            5.9,
+            603.7,
+            146.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 478.331,
+          "bbox": [
+            130.7,
+            421.3,
+            609.0,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 466.116,
+          "bbox": [
+            82.7,
+            0,
+            548.8,
+            97.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 445.444,
+          "bbox": [
+            32.9,
+            305.5,
+            478.4,
+            441.2
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 432.217,
+          "bbox": [
+            4.0,
+            0.4,
+            335.4,
+            432.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 415.141,
+          "bbox": [
+            195.3,
+            140.3,
+            610.4,
+            428.5
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 394.117,
+          "bbox": [
+            389.1,
+            4.7,
+            639.8,
+            398.8
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 389.655,
+          "bbox": [
+            560.9,
+            5.2,
+            639.8,
+            394.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 387.319,
+          "bbox": [
+            196.8,
+            109.0,
+            584.2,
+            276.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 382.458,
+          "bbox": [
+            85.6,
+            406.8,
+            468.1,
+            480
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 374.07,
+          "bbox": [
+            0,
+            14.8,
+            198.9,
+            388.9
+          ]
+        }
+      ]
     },
     {
       "id": "bmw-m3-e46",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 596.781,
+          "bbox": [
+            10.1,
+            33.3,
+            606.9,
+            427.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 559.639,
+          "bbox": [
+            41.0,
+            33.7,
+            600.7,
+            219.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 546.162,
+          "bbox": [
+            38.8,
+            224.9,
+            584.9,
+            423.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 515.441,
+          "bbox": [
+            48.3,
+            316.7,
+            563.8,
+            425.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 455.696,
+          "bbox": [
+            86.6,
+            358.5,
+            542.3,
+            470.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 438.777,
+          "bbox": [
+            158.3,
+            33.5,
+            597.1,
+            326.2
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 409.459,
+          "bbox": [
+            0,
+            53.2,
+            142.0,
+            462.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 401.508,
+          "bbox": [
+            74.4,
+            131.4,
+            475.9,
+            290.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 393.569,
+          "bbox": [
+            148.6,
+            397.8,
+            542.2,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 389.928,
+          "bbox": [
+            205.2,
+            153.1,
+            595.1,
+            420.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 388.797,
+          "bbox": [
+            38.6,
+            79.9,
+            427.4,
+            408.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 386.232,
+          "bbox": [
+            197.9,
+            34.5,
+            584.2,
+            141.4
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 385.514,
+          "bbox": [
+            0,
+            87.7,
+            63.4,
+            473.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 384.259,
+          "bbox": [
+            206.7,
+            326.6,
+            590.9,
+            480
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 379.784,
+          "bbox": [
+            349.4,
+            37.2,
+            597.0,
+            417.0
+          ]
+        }
+      ]
     },
     {
       "id": "ferrari-f40",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 629.414,
+          "bbox": [
+            1.5,
+            16.6,
+            630.9,
+            454.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 614.555,
+          "bbox": [
+            13.6,
+            212.8,
+            628.1,
+            465.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 597.933,
+          "bbox": [
+            24.5,
+            4.2,
+            622.4,
+            160.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 597.497,
+          "bbox": [
+            6.4,
+            15.0,
+            603.9,
+            270.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 571.822,
+          "bbox": [
+            56.1,
+            363.8,
+            628.0,
+            476.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 484.338,
+          "bbox": [
+            148.1,
+            0,
+            632.4,
+            112.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 438.976,
+          "bbox": [
+            40.0,
+            287.0,
+            479.0,
+            446.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 432.764,
+          "bbox": [
+            36.9,
+            1.8,
+            469.7,
+            102.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 420.413,
+          "bbox": [
+            275.9,
+            39.4,
+            639.3,
+            459.8
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 413.182,
+          "bbox": [
+            5.2,
+            11.9,
+            302.9,
+            425.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 406.255,
+          "bbox": [
+            7.0,
+            14.6,
+            413.3,
+            192.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 396.646,
+          "bbox": [
+            241.3,
+            309.6,
+            637.9,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 391.319,
+          "bbox": [
+            10.0,
+            187.7,
+            401.4,
+            442.1
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 389.827,
+          "bbox": [
+            424.8,
+            70.5,
+            639.6,
+            460.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 383.205,
+          "bbox": [
+            83.7,
+            393.2,
+            466.9,
+            480
+          ]
+        }
+      ]
     },
     {
       "id": "dodge-viper",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 623.54,
+          "bbox": [
+            12.1,
+            186.2,
+            635.6,
+            440.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 600.329,
+          "bbox": [
+            27.0,
+            188.7,
+            627.4,
+            324.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 592.037,
+          "bbox": [
+            30.1,
+            0.7,
+            622.1,
+            250.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 577.218,
+          "bbox": [
+            17.7,
+            273.7,
+            594.9,
+            416.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 532.482,
+          "bbox": [
+            56.2,
+            354.7,
+            588.7,
+            447.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 462.086,
+          "bbox": [
+            13.5,
+            202.7,
+            475.6,
+            390.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 458.423,
+          "bbox": [
+            107.2,
+            0,
+            565.6,
+            68.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 453.642,
+          "bbox": [
+            168.6,
+            0,
+            622.2,
+            174.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 447.354,
+          "bbox": [
+            29.8,
+            0,
+            477.2,
+            178.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 420.59,
+          "bbox": [
+            149.6,
+            377.3,
+            570.2,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 411.594,
+          "bbox": [
+            209.0,
+            139.1,
+            620.6,
+            224.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 410.743,
+          "bbox": [
+            199.9,
+            256.2,
+            610.7,
+            396.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 391.663,
+          "bbox": [
+            236.0,
+            110.2,
+            627.6,
+            203.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 388.556,
+          "bbox": [
+            16.7,
+            325.1,
+            405.3,
+            410.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 387.301,
+          "bbox": [
+            53.5,
+            367.2,
+            440.8,
+            480
+          ]
+        }
+      ]
     },
     {
       "id": "mazda-rx7-fb",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 633.389,
+          "bbox": [
+            5.6,
+            4.8,
+            639.0,
+            465.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 623.041,
+          "bbox": [
+            13.9,
+            233.4,
+            636.9,
+            465.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 582.341,
+          "bbox": [
+            55.6,
+            8.4,
+            638.0,
+            276.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 574.903,
+          "bbox": [
+            48.8,
+            333.5,
+            623.7,
+            474.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 511.184,
+          "bbox": [
+            70.0,
+            398.2,
+            581.2,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 481.243,
+          "bbox": [
+            136.6,
+            7.6,
+            617.9,
+            186.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 437.042,
+          "bbox": [
+            145.0,
+            145.4,
+            582.0,
+            276.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 431.459,
+          "bbox": [
+            36.3,
+            7.9,
+            467.8,
+            215.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 429.258,
+          "bbox": [
+            3.1,
+            2.5,
+            432.4,
+            356.5
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 422.463,
+          "bbox": [
+            0.4,
+            6.2,
+            222.8,
+            428.7
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 417.361,
+          "bbox": [
+            0,
+            18.0,
+            37.4,
+            435.4
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 413.477,
+          "bbox": [
+            288.3,
+            11.6,
+            638.6,
+            425.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 403.051,
+          "bbox": [
+            10.7,
+            295.1,
+            413.8,
+            466.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 401.403,
+          "bbox": [
+            224.1,
+            141.9,
+            625.5,
+            463.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 392.025,
+          "bbox": [
+            31.8,
+            191.5,
+            423.9,
+            335.9
+          ]
+        }
+      ]
     },
     {
       "id": "subaru-impreza-wrx-sti-gd",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 596.083,
+          "bbox": [
+            18.8,
+            55.3,
+            614.9,
+            455.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 571.445,
+          "bbox": [
+            29.0,
+            229.5,
+            600.4,
+            454.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 532.114,
+          "bbox": [
+            23.8,
+            56.8,
+            555.9,
+            254.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 462.174,
+          "bbox": [
+            65.1,
+            0,
+            527.2,
+            75.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 450.796,
+          "bbox": [
+            100.4,
+            349.7,
+            551.2,
+            468.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 425.273,
+          "bbox": [
+            176.7,
+            406.8,
+            602.0,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 420.353,
+          "bbox": [
+            61.3,
+            383.4,
+            481.7,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 419.775,
+          "bbox": [
+            174.2,
+            295.7,
+            593.9,
+            455.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 391.01,
+          "bbox": [
+            216.8,
+            64.3,
+            607.8,
+            355.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 387.73,
+          "bbox": [
+            34.4,
+            52.7,
+            422.1,
+            168.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 381.1,
+          "bbox": [
+            37.6,
+            285.6,
+            418.7,
+            463.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 375.437,
+          "bbox": [
+            214.4,
+            367.1,
+            589.8,
+            458.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 372.515,
+          "bbox": [
+            222.4,
+            155.9,
+            594.9,
+            452.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 371.561,
+          "bbox": [
+            29.5,
+            60.4,
+            302.8,
+            432.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 360.876,
+          "bbox": [
+            91.7,
+            26.4,
+            452.6,
+            102.2
+          ]
+        }
+      ]
     },
     {
       "id": "porsche-carrera-gt",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 637.636,
+          "bbox": [
+            3.1,
+            2.3,
+            640,
+            453.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 623.428,
+          "bbox": [
+            9.7,
+            341.1,
+            633.2,
+            478.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 616.279,
+          "bbox": [
+            12.7,
+            3.4,
+            628.9,
+            218.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 615.146,
+          "bbox": [
+            11.6,
+            231.0,
+            626.7,
+            473.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 614.588,
+          "bbox": [
+            11.9,
+            403.2,
+            626.5,
+            479.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 529.584,
+          "bbox": [
+            9.6,
+            0,
+            539.2,
+            107.1
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 467.376,
+          "bbox": [
+            0.3,
+            2.2,
+            239.8,
+            469.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 429.437,
+          "bbox": [
+            0,
+            24.3,
+            95.3,
+            453.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 419.846,
+          "bbox": [
+            213.9,
+            99.9,
+            633.8,
+            471.0
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 410.861,
+          "bbox": [
+            319.2,
+            7.5,
+            632.5,
+            418.4
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 396.408,
+          "bbox": [
+            592.8,
+            9.2,
+            638.8,
+            405.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 393.714,
+          "bbox": [
+            0,
+            84.5,
+            154.0,
+            478.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 380.998,
+          "bbox": [
+            153.5,
+            3.1,
+            534.5,
+            187.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 380.204,
+          "bbox": [
+            8.6,
+            261.1,
+            388.8,
+            459.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 373.489,
+          "bbox": [
+            243.9,
+            0.7,
+            617.4,
+            134.7
+          ]
+        }
+      ]
     },
     {
       "id": "toyota-ae86",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 626.702,
+          "bbox": [
+            6.6,
+            14.2,
+            633.3,
+            440.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 589.705,
+          "bbox": [
+            18.8,
+            240.6,
+            608.5,
+            445.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 583.863,
+          "bbox": [
+            7.7,
+            25.3,
+            591.6,
+            269.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 564.999,
+          "bbox": [
+            17.0,
+            12.0,
+            582.0,
+            136.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 533.544,
+          "bbox": [
+            49.9,
+            0,
+            583.4,
+            80.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 501.583,
+          "bbox": [
+            93.3,
+            373.9,
+            594.9,
+            459.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 498.909,
+          "bbox": [
+            45.6,
+            335.7,
+            544.5,
+            469.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 475.621,
+          "bbox": [
+            136.7,
+            317.4,
+            612.3,
+            442.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 468.681,
+          "bbox": [
+            145.0,
+            143.8,
+            613.7,
+            437.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 450.363,
+          "bbox": [
+            135.0,
+            411.9,
+            585.3,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 418.144,
+          "bbox": [
+            210.7,
+            234.6,
+            628.8,
+            407.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 417.506,
+          "bbox": [
+            112.9,
+            125.8,
+            530.4,
+            281.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 417.004,
+          "bbox": [
+            182.2,
+            128.2,
+            599.2,
+            235.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 384.058,
+          "bbox": [
+            241.0,
+            55.8,
+            625.0,
+            327.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 382.974,
+          "bbox": [
+            9.3,
+            27.4,
+            295.0,
+            410.4
+          ]
+        }
+      ]
     },
     {
       "id": "audi-r8-type42",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 619.004,
+          "bbox": [
+            6.4,
+            270.3,
+            625.4,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 589.603,
+          "bbox": [
+            12.1,
+            369.9,
+            601.7,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 589.189,
+          "bbox": [
+            1.1,
+            0.5,
+            590.3,
+            368.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 571.959,
+          "bbox": [
+            2.4,
+            0.3,
+            574.3,
+            134.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 569.193,
+          "bbox": [
+            76.5,
+            88.9,
+            640,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 556.183,
+          "bbox": [
+            55.9,
+            418.9,
+            612.1,
+            479.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 547.139,
+          "bbox": [
+            17.1,
+            0,
+            564.3,
+            74.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 543.149,
+          "bbox": [
+            34.7,
+            33.3,
+            577.8,
+            227.5
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 469.21,
+          "bbox": [
+            0,
+            9.1,
+            392.9,
+            478.3
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 466.961,
+          "bbox": [
+            472.3,
+            1.3,
+            639.9,
+            468.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 466.589,
+          "bbox": [
+            107.0,
+            192.4,
+            573.6,
+            450.8
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 461.737,
+          "bbox": [
+            0.0,
+            3.5,
+            155.2,
+            465.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 428.494,
+          "bbox": [
+            116.6,
+            302.6,
+            545.1,
+            453.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 417.573,
+          "bbox": [
+            66.9,
+            41.5,
+            484.5,
+            168.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 416.766,
+          "bbox": [
+            208.0,
+            0,
+            624.8,
+            118.8
+          ]
+        }
+      ]
     },
     {
       "id": "ferrari-458-italia",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 606.492,
+          "bbox": [
+            17.9,
+            107.7,
+            624.4,
+            378.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 585.594,
+          "bbox": [
+            31.2,
+            225.2,
+            616.8,
+            379.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 581.008,
+          "bbox": [
+            36.0,
+            107.4,
+            617.0,
+            262.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 572.303,
+          "bbox": [
+            49.0,
+            100.9,
+            621.3,
+            188.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 550.794,
+          "bbox": [
+            35.0,
+            294.4,
+            585.8,
+            380.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 515.333,
+          "bbox": [
+            105.4,
+            71.4,
+            620.8,
+            167.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 491.253,
+          "bbox": [
+            133.1,
+            12.7,
+            624.3,
+            155.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 472.597,
+          "bbox": [
+            92.6,
+            286.5,
+            565.2,
+            432.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 459.871,
+          "bbox": [
+            76.1,
+            0,
+            536.0,
+            120.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 423.31,
+          "bbox": [
+            205.5,
+            0,
+            628.8,
+            105.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 409.822,
+          "bbox": [
+            213.9,
+            96.6,
+            623.7,
+            221.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 403.339,
+          "bbox": [
+            216.7,
+            108.0,
+            620.1,
+            328.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 389.987,
+          "bbox": [
+            14.4,
+            34.4,
+            404.4,
+            187.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 386.362,
+          "bbox": [
+            46.0,
+            319.3,
+            432.4,
+            428.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 380.509,
+          "bbox": [
+            149.8,
+            315.7,
+            530.3,
+            480
+          ]
+        }
+      ]
     },
     {
       "id": "nissan-350z",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 474.353,
+          "bbox": [
+            121.3,
+            45.4,
+            595.7,
+            186.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 461.491,
+          "bbox": [
+            97.9,
+            78.5,
+            559.4,
+            383.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 433.618,
+          "bbox": [
+            150.7,
+            12.9,
+            584.3,
+            111.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 424.637,
+          "bbox": [
+            107.0,
+            263.0,
+            531.7,
+            394.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 409.491,
+          "bbox": [
+            106.9,
+            81.7,
+            516.4,
+            222.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 392.047,
+          "bbox": [
+            5.7,
+            32.9,
+            397.7,
+            122.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 384.094,
+          "bbox": [
+            268.6,
+            119.0,
+            640,
+            397.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 382.512,
+          "bbox": [
+            127.8,
+            302.2,
+            510.3,
+            471.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 367.711,
+          "bbox": [
+            113.6,
+            56.8,
+            481.3,
+            112.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 364.682,
+          "bbox": [
+            14.7,
+            0,
+            379.4,
+            82.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 363.16,
+          "bbox": [
+            198.4,
+            0,
+            561.5,
+            74.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 359.595,
+          "bbox": [
+            44.5,
+            48.0,
+            404.1,
+            100.7
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 350.87,
+          "bbox": [
+            494.5,
+            55.3,
+            640,
+            406.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 348.785,
+          "bbox": [
+            176.1,
+            204.8,
+            524.9,
+            338.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 345.601,
+          "bbox": [
+            129.0,
+            13.7,
+            474.6,
+            88.1
+          ]
+        }
+      ]
     },
     {
       "id": "bmw-m5-e60",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 613.72,
+          "bbox": [
+            19.3,
+            28.1,
+            633.0,
+            439.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 599.73,
+          "bbox": [
+            30.2,
+            345.8,
+            629.9,
+            479.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 591.376,
+          "bbox": [
+            21.2,
+            209.5,
+            612.5,
+            442.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 560.203,
+          "bbox": [
+            29.0,
+            3.8,
+            589.2,
+            250.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 556.248,
+          "bbox": [
+            56.1,
+            420.3,
+            612.3,
+            479.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 531.878,
+          "bbox": [
+            18.9,
+            302.5,
+            550.8,
+            449.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 491.873,
+          "bbox": [
+            5.2,
+            386.6,
+            497.1,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 488.211,
+          "bbox": [
+            127.5,
+            280.0,
+            615.8,
+            426.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 460.181,
+          "bbox": [
+            138.5,
+            0,
+            598.7,
+            142.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 406.029,
+          "bbox": [
+            208.4,
+            34.3,
+            614.5,
+            371.9
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 404.826,
+          "bbox": [
+            20.9,
+            35.3,
+            317.8,
+            440.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 396.801,
+          "bbox": [
+            26.7,
+            0,
+            423.5,
+            127.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 393.492,
+          "bbox": [
+            78.7,
+            61.9,
+            472.2,
+            336.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 389.831,
+          "bbox": [
+            1.2,
+            327.4,
+            391.0,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 357.49,
+          "bbox": [
+            86.6,
+            63.9,
+            444.1,
+            192.6
+          ]
+        }
+      ]
     },
     {
       "id": "mclaren-p1",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 641.37,
+          "bbox": [
+            3.3,
+            128.3,
+            640,
+            479.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 619.367,
+          "bbox": [
+            18.9,
+            301.1,
+            638.3,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 601.807,
+          "bbox": [
+            30.4,
+            35.9,
+            632.2,
+            304.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 600.842,
+          "bbox": [
+            23.4,
+            382.8,
+            624.2,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 588.656,
+          "bbox": [
+            40.0,
+            0,
+            628.7,
+            197.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 537.101,
+          "bbox": [
+            99.6,
+            0.0,
+            636.7,
+            119.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 473.731,
+          "bbox": [
+            25.0,
+            43.6,
+            498.7,
+            433.4
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 470.783,
+          "bbox": [
+            564.9,
+            6.5,
+            639.9,
+            477.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 470.007,
+          "bbox": [
+            5.7,
+            22.0,
+            475.7,
+            170.3
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 456.613,
+          "bbox": [
+            456.6,
+            18.9,
+            639.5,
+            475.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 451.441,
+          "bbox": [
+            8.3,
+            347.9,
+            459.8,
+            468.4
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 448.172,
+          "bbox": [
+            206.0,
+            14.3,
+            637.5,
+            462.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 448.028,
+          "bbox": [
+            27.8,
+            313.6,
+            475.8,
+            434.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 445.942,
+          "bbox": [
+            25.0,
+            416.7,
+            470.9,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 443.608,
+          "bbox": [
+            31.6,
+            210.3,
+            475.3,
+            432.2
+          ]
+        }
+      ]
     },
     {
       "id": "lamborghini-huracan",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 636.882,
+          "bbox": [
+            0,
+            5.6,
+            636.6,
+            477.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 618.084,
+          "bbox": [
+            14.9,
+            0.3,
+            632.9,
+            192.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 603.597,
+          "bbox": [
+            34.4,
+            260.1,
+            638.0,
+            477.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 596.688,
+          "bbox": [
+            40.9,
+            0.0,
+            637.6,
+            106.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 585.673,
+          "bbox": [
+            51.8,
+            406.8,
+            637.5,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 548.05,
+          "bbox": [
+            1.6,
+            0,
+            549.7,
+            61.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 511.25,
+          "bbox": [
+            121.5,
+            127.8,
+            632.7,
+            450.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 505.387,
+          "bbox": [
+            6.8,
+            327.6,
+            512.2,
+            480
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 469.569,
+          "bbox": [
+            0.4,
+            2.8,
+            311.0,
+            472.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 459.659,
+          "bbox": [
+            175.7,
+            339.1,
+            635.4,
+            476.0
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 446.86,
+          "bbox": [
+            316.6,
+            1.0,
+            638.3,
+            447.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 443.441,
+          "bbox": [
+            7.0,
+            201.9,
+            450.5,
+            474.1
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 432.792,
+          "bbox": [
+            450.8,
+            49.2,
+            640,
+            480
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 430.638,
+          "bbox": [
+            0,
+            44.6,
+            104.2,
+            475.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 424.975,
+          "bbox": [
+            164.3,
+            455.3,
+            589.2,
+            479.9
+          ]
+        }
+      ]
     },
     {
       "id": "chevrolet-corvette-c7",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 606.698,
+          "bbox": [
+            19.0,
+            157.1,
+            625.7,
+            437.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 581.069,
+          "bbox": [
+            52.0,
+            43.8,
+            633.0,
+            329.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 577.105,
+          "bbox": [
+            33.8,
+            155.2,
+            610.9,
+            276.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 538.506,
+          "bbox": [
+            84.8,
+            274.5,
+            623.3,
+            441.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 497.416,
+          "bbox": [
+            80.9,
+            1.3,
+            578.3,
+            186.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 459.801,
+          "bbox": [
+            155.4,
+            85.1,
+            615.2,
+            240.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 455.788,
+          "bbox": [
+            10.3,
+            6.7,
+            466.1,
+            278.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 444.019,
+          "bbox": [
+            171.4,
+            148.3,
+            615.5,
+            339.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 421.359,
+          "bbox": [
+            67.5,
+            344.8,
+            488.8,
+            462.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 412.03,
+          "bbox": [
+            127.9,
+            0,
+            540.0,
+            77.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 383.892,
+          "bbox": [
+            80.5,
+            159.1,
+            464.4,
+            235.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 377.786,
+          "bbox": [
+            90.1,
+            0,
+            467.9,
+            120.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 374.207,
+          "bbox": [
+            166.0,
+            384.6,
+            540.2,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 368.866,
+          "bbox": [
+            254.7,
+            1.7,
+            623.6,
+            224.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 364.875,
+          "bbox": [
+            256.3,
+            169.7,
+            621.2,
+            265.4
+          ]
+        }
+      ]
     },
     {
       "id": "ferrari-laferrari",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 607.629,
+          "bbox": [
+            12.7,
+            44.2,
+            620.4,
+            438.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 567.791,
+          "bbox": [
+            21.6,
+            206.3,
+            589.4,
+            474.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 549.185,
+          "bbox": [
+            61.6,
+            37.3,
+            610.8,
+            274.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 495.122,
+          "bbox": [
+            59.0,
+            381.4,
+            554.1,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 463.035,
+          "bbox": [
+            175.1,
+            0.2,
+            638.2,
+            228.5
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 428.172,
+          "bbox": [
+            551.9,
+            11.9,
+            640,
+            440.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 423.435,
+          "bbox": [
+            17.0,
+            13.2,
+            440.5,
+            210.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 423.123,
+          "bbox": [
+            43.7,
+            124.4,
+            466.9,
+            429.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 412.927,
+          "bbox": [
+            0,
+            359.3,
+            412.4,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 410.819,
+          "bbox": [
+            233.2,
+            0,
+            640,
+            107.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 409.549,
+          "bbox": [
+            60.6,
+            416.9,
+            470.1,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 407.883,
+          "bbox": [
+            162.5,
+            37.3,
+            570.4,
+            181.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 399.471,
+          "bbox": [
+            67.5,
+            314.5,
+            466.9,
+            472.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 392.462,
+          "bbox": [
+            84.8,
+            163.5,
+            477.3,
+            343.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 384.755,
+          "bbox": [
+            0,
+            260.9,
+            383.2,
+            480
+          ]
+        }
+      ]
     },
     {
       "id": "bugatti-chiron",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 629.738,
+          "bbox": [
+            9.6,
+            26.5,
+            639.4,
+            457.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 597.352,
+          "bbox": [
+            31.3,
+            18.9,
+            628.7,
+            223.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 568.87,
+          "bbox": [
+            29.3,
+            1.6,
+            598.2,
+            113.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 568.289,
+          "bbox": [
+            46.6,
+            0,
+            614.9,
+            21.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 537.442,
+          "bbox": [
+            22.4,
+            252.6,
+            559.8,
+            454.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 505.472,
+          "bbox": [
+            29.6,
+            340.9,
+            535.1,
+            462.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 474.767,
+          "bbox": [
+            48.1,
+            396.6,
+            522.8,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 448.514,
+          "bbox": [
+            176.5,
+            21.7,
+            625.0,
+            324.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 434.676,
+          "bbox": [
+            189.2,
+            20.5,
+            623.9,
+            173.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 432.066,
+          "bbox": [
+            162.9,
+            181.9,
+            595.0,
+            441.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 431.337,
+          "bbox": [
+            19.2,
+            1.0,
+            450.5,
+            172.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 428.646,
+          "bbox": [
+            209.5,
+            0,
+            638.2,
+            72.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 412.645,
+          "bbox": [
+            30.0,
+            0.1,
+            442.6,
+            73.2
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 406.369,
+          "bbox": [
+            349.6,
+            29.0,
+            625.2,
+            435.3
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 403.991,
+          "bbox": [
+            26.5,
+            37.1,
+            336.4,
+            441.1
+          ]
+        }
+      ]
     },
     {
       "id": "porsche-911-gt3-rs",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 573.448,
+          "bbox": [
+            2.6,
+            38.8,
+            576.1,
+            352.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 562.203,
+          "bbox": [
+            38.3,
+            264.9,
+            600.5,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 539.234,
+          "bbox": [
+            20.0,
+            131.1,
+            559.3,
+            462.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 530.374,
+          "bbox": [
+            11.7,
+            2.1,
+            542.1,
+            174.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 484.206,
+          "bbox": [
+            124.9,
+            356.0,
+            609.1,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 480.988,
+          "bbox": [
+            67.0,
+            0,
+            548.0,
+            72.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 465.389,
+          "bbox": [
+            20.0,
+            332.0,
+            485.4,
+            476.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 454.831,
+          "bbox": [
+            21.7,
+            0,
+            476.5,
+            112.9
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 450.14,
+          "bbox": [
+            0,
+            11.8,
+            173.6,
+            462.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 435.449,
+          "bbox": [
+            144.0,
+            10.7,
+            579.5,
+            120.9
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 429.502,
+          "bbox": [
+            7.9,
+            34.3,
+            291.2,
+            463.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 423.961,
+          "bbox": [
+            151.3,
+            38.2,
+            575.2,
+            216.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 419.872,
+          "bbox": [
+            3.2,
+            397.9,
+            423.0,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 395.236,
+          "bbox": [
+            51.4,
+            101.6,
+            446.6,
+            336.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 388.747,
+          "bbox": [
+            1.7,
+            228.0,
+            390.4,
+            478.9
+          ]
+        }
+      ]
     },
     {
       "id": "ford-gt-2005",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 626.838,
+          "bbox": [
+            1.4,
+            11.9,
+            628.3,
+            441.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 604.054,
+          "bbox": [
+            15.1,
+            13.7,
+            619.2,
+            232.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 531.629,
+          "bbox": [
+            25.4,
+            258.0,
+            557.0,
+            479.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 503.381,
+          "bbox": [
+            116.3,
+            69.7,
+            619.7,
+            347.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 495.054,
+          "bbox": [
+            97.1,
+            1.1,
+            592.2,
+            99.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 488.327,
+          "bbox": [
+            53.0,
+            392.1,
+            541.4,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 474.7,
+          "bbox": [
+            140.7,
+            140.0,
+            615.4,
+            443.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 469.887,
+          "bbox": [
+            152.1,
+            280.6,
+            622.0,
+            452.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 461.385,
+          "bbox": [
+            20.9,
+            14.4,
+            482.3,
+            171.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 458.914,
+          "bbox": [
+            151.5,
+            360.3,
+            610.4,
+            473.0
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 450.48,
+          "bbox": [
+            372.6,
+            0.8,
+            636.1,
+            451.3
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 440.644,
+          "bbox": [
+            0,
+            29.6,
+            163.3,
+            470.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 425.338,
+          "bbox": [
+            22.5,
+            157.0,
+            447.9,
+            453.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 424.792,
+          "bbox": [
+            17.9,
+            0.1,
+            442.6,
+            61.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 423.337,
+          "bbox": [
+            564.3,
+            7.6,
+            640,
+            431.0
+          ]
+        }
+      ]
     },
     {
       "id": "bugatti-veyron",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 635.191,
+          "bbox": [
+            0.0,
+            109.9,
+            635.2,
+            479.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 611.063,
+          "bbox": [
+            2.7,
+            291.9,
+            613.8,
+            479.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 599.285,
+          "bbox": [
+            1.3,
+            0.4,
+            600.6,
+            311.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 533.361,
+          "bbox": [
+            2.5,
+            0.5,
+            535.9,
+            157.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 521.306,
+          "bbox": [
+            113.5,
+            404.6,
+            634.8,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 463.072,
+          "bbox": [
+            176.3,
+            213.3,
+            639.4,
+            479.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 456.934,
+          "bbox": [
+            1.4,
+            13.3,
+            357.9,
+            470.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 455.511,
+          "bbox": [
+            150.7,
+            323.3,
+            606.2,
+            446.0
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 442.366,
+          "bbox": [
+            507.7,
+            1.1,
+            640,
+            443.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 429.632,
+          "bbox": [
+            197.8,
+            0,
+            627.4,
+            176.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 428.364,
+          "bbox": [
+            190.7,
+            454.4,
+            619.1,
+            480.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 420.97,
+          "bbox": [
+            155.1,
+            433.1,
+            576.1,
+            480
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 414.897,
+          "bbox": [
+            258.3,
+            40.2,
+            639.1,
+            455.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 405.135,
+          "bbox": [
+            190.8,
+            98.3,
+            596.0,
+            340.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 401.202,
+          "bbox": [
+            181.6,
+            409.7,
+            582.8,
+            452.7
+          ]
+        }
+      ]
     },
     {
       "id": "koenigsegg-agera-rsr",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 627.857,
+          "bbox": [
+            10.7,
+            296.3,
+            638.5,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 613.814,
+          "bbox": [
+            20.9,
+            135.3,
+            634.8,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 608.678,
+          "bbox": [
+            5.7,
+            0,
+            614.4,
+            332.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 575.698,
+          "bbox": [
+            42.5,
+            158.3,
+            618.2,
+            275.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 575.188,
+          "bbox": [
+            36.8,
+            221.0,
+            612.0,
+            411.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 572.916,
+          "bbox": [
+            15.9,
+            444.7,
+            588.8,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 547.172,
+          "bbox": [
+            87.3,
+            370.2,
+            634.4,
+            479.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 543.826,
+          "bbox": [
+            83.3,
+            0.5,
+            627.1,
+            202.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 455.951,
+          "bbox": [
+            165.1,
+            162.3,
+            621.1,
+            360.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 433.327,
+          "bbox": [
+            1.3,
+            332.9,
+            434.7,
+            479.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 421.986,
+          "bbox": [
+            4.3,
+            424.7,
+            426.3,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 402.027,
+          "bbox": [
+            15.7,
+            166.0,
+            417.7,
+            431.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 399.224,
+          "bbox": [
+            15.3,
+            72.7,
+            414.5,
+            272.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 383.456,
+          "bbox": [
+            255.4,
+            230.3,
+            638.9,
+            479.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 381.117,
+          "bbox": [
+            74.5,
+            464.4,
+            455.6,
+            480
+          ]
+        }
+      ]
     },
     {
       "id": "mercedes-amg-gt-c190",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 602.173,
+          "bbox": [
+            13.1,
+            14.0,
+            615.3,
+            439.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 580.275,
+          "bbox": [
+            29.6,
+            8.9,
+            609.9,
+            234.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 577.928,
+          "bbox": [
+            27.3,
+            2.2,
+            605.2,
+            86.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 530.47,
+          "bbox": [
+            89.3,
+            174.3,
+            619.8,
+            442.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 526.117,
+          "bbox": [
+            106.8,
+            318.9,
+            632.9,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 496.524,
+          "bbox": [
+            97.1,
+            10.1,
+            593.6,
+            144.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 450.31,
+          "bbox": [
+            163.3,
+            27.8,
+            613.6,
+            334.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 444.547,
+          "bbox": [
+            178.4,
+            399.4,
+            622.9,
+            480
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 438.442,
+          "bbox": [
+            0.2,
+            3.1,
+            165.4,
+            441.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 435.102,
+          "bbox": [
+            72.8,
+            301.3,
+            507.9,
+            445.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 434.175,
+          "bbox": [
+            2.0,
+            208.6,
+            436.2,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 431.986,
+          "bbox": [
+            177.8,
+            292.3,
+            609.8,
+            423.8
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 430.663,
+          "bbox": [
+            0.1,
+            40.7,
+            69.2,
+            471.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 406.844,
+          "bbox": [
+            37.9,
+            334.2,
+            444.8,
+            472.7
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 400.123,
+          "bbox": [
+            206.5,
+            358.4,
+            606.6,
+            464.9
+          ]
+        }
+      ]
     },
     {
       "id": "bmw-m5-f90",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 637.289,
+          "bbox": [
+            1.8,
+            40.9,
+            639.1,
+            462.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 590.819,
+          "bbox": [
+            41.2,
+            272.4,
+            632.0,
+            463.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 544.164,
+          "bbox": [
+            51.2,
+            34.8,
+            595.4,
+            220.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 513.453,
+          "bbox": [
+            100.9,
+            377.7,
+            614.4,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 483.155,
+          "bbox": [
+            31.6,
+            33.7,
+            514.8,
+            139.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 468.835,
+          "bbox": [
+            170.6,
+            168.4,
+            639.5,
+            461.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 438.74,
+          "bbox": [
+            19.5,
+            358.3,
+            458.3,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 434.473,
+          "bbox": [
+            195.7,
+            411.5,
+            630.2,
+            479.4
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 397.782,
+          "bbox": [
+            52.8,
+            24.0,
+            450.6,
+            81.5
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 385.108,
+          "bbox": [
+            0,
+            92.8,
+            36.8,
+            477.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 384.36,
+          "bbox": [
+            207.2,
+            147.3,
+            591.5,
+            296.1
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 383.113,
+          "bbox": [
+            15.0,
+            77.0,
+            394.1,
+            460.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 375.928,
+          "bbox": [
+            253.6,
+            358.5,
+            629.5,
+            465.6
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 366.548,
+          "bbox": [
+            362.1,
+            36.2,
+            637.9,
+            402.8
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 362.04,
+          "bbox": [
+            196.7,
+            455.7,
+            558.8,
+            480
+          ]
+        }
+      ]
     },
     {
       "id": "bmw-m3-e30",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 616.45,
+          "bbox": [
+            2.5,
+            210.8,
+            618.9,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 570.633,
+          "bbox": [
+            13.4,
+            388.2,
+            584.0,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 542.722,
+          "bbox": [
+            97.6,
+            38.5,
+            640,
+            434.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 540.439,
+          "bbox": [
+            51.9,
+            340.3,
+            592.4,
+            468.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 518.946,
+          "bbox": [
+            104.9,
+            39.0,
+            623.9,
+            176.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 497.154,
+          "bbox": [
+            106.5,
+            116.2,
+            603.7,
+            266.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 482.438,
+          "bbox": [
+            145.9,
+            0,
+            628.3,
+            106.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 479.844,
+          "bbox": [
+            101.2,
+            272.5,
+            581.0,
+            454.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 419.021,
+          "bbox": [
+            1.2,
+            86.8,
+            420.2,
+            478.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 409.179,
+          "bbox": [
+            179.5,
+            156.1,
+            588.6,
+            423.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 404.166,
+          "bbox": [
+            235.8,
+            311.6,
+            640.0,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 398.862,
+          "bbox": [
+            79.8,
+            1.4,
+            478.7,
+            266.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 395.141,
+          "bbox": [
+            245.5,
+            104.5,
+            640,
+            367.5
+          ]
+        },
+        {
+          "class": "motorcycle",
+          "confidence": 343.139,
+          "bbox": [
+            0,
+            95.7,
+            41.4,
+            438.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 341.645,
+          "bbox": [
+            2.4,
+            326.3,
+            344.1,
+            479.8
+          ]
+        }
+      ]
     },
     {
       "id": "mitsubishi-lancer-evo-ix",
-      "reason": "Verification unavailable: [ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Got invalid dimensions for input: images for the following indices\n index: 2 Got: 640 Expected: 480\n Please fix either the inputs/outputs or the model."
+      "reason": "Another vehicle detected in the scene",
+      "detected": [
+        {
+          "class": "car",
+          "confidence": 516.576,
+          "bbox": [
+            59.2,
+            81.9,
+            575.8,
+            396.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 516.354,
+          "bbox": [
+            83.4,
+            9.4,
+            599.8,
+            205.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 500.033,
+          "bbox": [
+            69.1,
+            77.2,
+            569.1,
+            235.5
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 496.811,
+          "bbox": [
+            78.6,
+            293.9,
+            575.4,
+            396.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 453.557,
+          "bbox": [
+            59.0,
+            51.9,
+            512.6,
+            182.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 439.136,
+          "bbox": [
+            33.6,
+            0,
+            472.7,
+            101.3
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 411.102,
+          "bbox": [
+            140.1,
+            0,
+            551.2,
+            84.0
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 409.92,
+          "bbox": [
+            165.4,
+            221.0,
+            575.3,
+            394.2
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 403.457,
+          "bbox": [
+            9.0,
+            0,
+            412.5,
+            43.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 402.282,
+          "bbox": [
+            154.7,
+            319.4,
+            557.0,
+            417.1
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 394.36,
+          "bbox": [
+            122.6,
+            338.3,
+            517.0,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 366.2,
+          "bbox": [
+            162.4,
+            436.9,
+            528.6,
+            480
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 363.061,
+          "bbox": [
+            9.9,
+            0,
+            373.0,
+            169.6
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 342.422,
+          "bbox": [
+            42.7,
+            303.6,
+            385.1,
+            452.9
+          ]
+        },
+        {
+          "class": "car",
+          "confidence": 339.921,
+          "bbox": [
+            111.1,
+            84.9,
+            451.1,
+            151.0
+          ]
+        }
+      ]
     }
   ],
   "totalOriginalPhotos": 0,
