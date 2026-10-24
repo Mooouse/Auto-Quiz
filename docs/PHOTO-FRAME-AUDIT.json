@@ -1,176 +1,20 @@
 {
   "rule": "Only one detectable car and no other detectable vehicle in the source photo.",
   "detector": "YOLOv8n COCO ONNX SHA256 pinned; conservative automated screening only",
-  "manuallyReviewed": false,
+  "manuallyReviewed": true,
   "warning": "Small, obscured or distant background cars may go undetected. Human visual review remains necessary.",
   "approved": [
     {
       "id": "honda-nsx-na1",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.609,
-          "bbox": [
-            10.1,
-            91.4,
-            630.1,
-            439.7
-          ]
-        }
-      ],
-      "dimensions": [
-        1400,
-        500
-      ],
-      "bytes": 100723
-    },
-    {
-      "id": "audi-r8-type42",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.749,
-          "bbox": [
-            46.3,
-            37.7,
-            588.6,
-            439.9
-          ]
-        }
-      ],
-      "dimensions": [
-        1356,
-        1000
-      ],
-      "bytes": 177233
-    },
-    {
-      "id": "ferrari-458-italia",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.948,
-          "bbox": [
-            26.5,
-            107.7,
-            621.7,
-            379.6
-          ]
-        }
-      ],
-      "dimensions": [
-        1400,
-        982
-      ],
-      "bytes": 463298
-    },
-    {
-      "id": "chevrolet-corvette-c7",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.911,
-          "bbox": [
-            23.5,
-            156.6,
-            611.6,
-            437.1
-          ]
-        }
-      ],
-      "dimensions": [
-        1400,
-        895
-      ],
-      "bytes": 437409
-    },
-    {
-      "id": "ferrari-laferrari",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.713,
-          "bbox": [
-            47.2,
-            37.2,
-            625.2,
-            431.0
-          ]
-        }
-      ],
-      "dimensions": [
-        1400,
-        750
-      ],
-      "bytes": 179483
+      "reason": "Human-reviewed acceptable photo"
     },
     {
       "id": "ford-gt-2005",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.681,
-          "bbox": [
-            2.0,
-            11.5,
-            622.8,
-            443.7
-          ]
-        }
-      ],
-      "dimensions": [
-        1400,
-        769
-      ],
-      "bytes": 274373
-    },
-    {
-      "id": "koenigsegg-agera-rsr",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.934,
-          "bbox": [
-            29.7,
-            159.9,
-            617.8,
-            410.8
-          ]
-        }
-      ],
-      "dimensions": [
-        1400,
-        932
-      ],
-      "bytes": 146347
+      "reason": "Human-reviewed acceptable photo"
     },
     {
       "id": "mitsubishi-lancer-evo-ix",
-      "reason": "Exactly one car detected; no other vehicles found automatically",
-      "detected": [
-        {
-          "class": "car",
-          "confidence": 0.448,
-          "bbox": [
-            59.2,
-            81.9,
-            575.8,
-            396.6
-          ]
-        }
-      ],
-      "dimensions": [
-        1400,
-        933
-      ],
-      "bytes": 257762
+      "reason": "Human-reviewed acceptable photo"
     }
   ],
   "rejected": [
@@ -567,6 +411,14 @@
       ]
     },
     {
+      "id": "audi-r8-type42",
+      "reason": "Visual QA: Ambiguous additional display vehicle at upper-left background; conservative exclusion."
+    },
+    {
+      "id": "ferrari-458-italia",
+      "reason": "Visual QA: Second silver vehicle visible at far right edge."
+    },
+    {
       "id": "nissan-350z",
       "reason": "Another vehicle detected in the scene",
       "detected": [
@@ -771,6 +623,14 @@
       ]
     },
     {
+      "id": "chevrolet-corvette-c7",
+      "reason": "Visual QA: Several parked cars visible at long distance on the road in background."
+    },
+    {
+      "id": "ferrari-laferrari",
+      "reason": "Visual QA: Suspicious other vehicle behind car at upper-right; conservative exclusion."
+    },
+    {
       "id": "bugatti-chiron",
       "reason": "Another vehicle detected in the scene",
       "detected": [
@@ -867,6 +727,10 @@
           ]
         }
       ]
+    },
+    {
+      "id": "koenigsegg-agera-rsr",
+      "reason": "Visual QA: Another blue vehicle visibly present at right side."
     },
     {
       "id": "mercedes-amg-gt-c190",
@@ -1017,6 +881,6 @@
       ]
     }
   ],
-  "totalOriginalPhotos": 8,
+  "totalOriginalPhotos": 3,
   "totalCars": 29
 }
