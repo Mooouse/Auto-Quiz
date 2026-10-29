@@ -73,6 +73,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
+      actions: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -80,3 +81,21 @@ jobs:
       - name: Publish game
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Keep only artifacts from the latest successful build
+        if: success()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          # Artifacts for the current run stay available for download.
+          # Previous runs' artifacts are no longer needed after success.
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/actions/artifacts?per_page=100" \
+            --jq '.artifacts[] | select(.expired == false) | [.id, (.workflow_run.id // 0)] | @tsv' \
+            > "${RUNNER_TEMP}/artifact-list.tsv"
+          while IFS=$'\t' read -r artifact_id run_id; do
+            if [[ "${run_id}" != "${GITHUB_RUN_ID}" ]]; then
+              gh api --method DELETE "repos/${GITHUB_REPOSITORY}/actions/artifacts/${artifact_id}"
+              echo "Removed old artifact ${artifact_id} (run ${run_id})"
+            fi
+          done < "${RUNNER_TEMP}/artifact-list.tsv"
